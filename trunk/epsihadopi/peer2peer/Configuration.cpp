@@ -6,8 +6,6 @@ using namespace std;
 Configuration::Configuration()
 {
 
-
-
 }
 
 
@@ -21,6 +19,7 @@ Configuration* Configuration::getConfig()
 		return config;
 	} else {
 		Configuration *toCreate = new Configuration();
-		return toCreate;
+		config = toCreate;
+		return config;
 	}
 }
