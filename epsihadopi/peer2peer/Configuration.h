@@ -12,7 +12,7 @@ class Configuration
 		static  string logSimplifierName;
 		static  string logDebugName;
 	private:
-		private Configuration config;
+		static Configuration config;
 
 };
 
