@@ -11,6 +11,7 @@ class Configuration
 		static unsigned short nbReceptionSimultane;//réception ~~
 		static  string logSimplifierName;
 		static  string logDebugName;
+
 	private:
 		static Configuration config;
 
