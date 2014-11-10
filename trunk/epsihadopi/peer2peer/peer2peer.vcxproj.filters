@@ -41,6 +41,9 @@
     <ClInclude Include="DemoThreads.h">
       <Filter>Header Files\Demos</Filter>
     </ClInclude>
+    <ClInclude Include="Directorythread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -60,6 +63,9 @@
     </ClCompile>
     <ClCompile Include="DemoThreads.cpp">
       <Filter>Source Files\Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="Directorythread.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -225,5 +231,6 @@
     <None Include="..\libs\pthreads\docs\sem_init.html">
       <Filter>Documentation\pthreads</Filter>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
