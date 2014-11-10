@@ -18,7 +18,7 @@ public:
 	static vector<Fichier *> ListeFichier;
 	static vector<Block *>  ListeBlock;
 
-	private
-		private ConfigurationInterne configInterne;
+private:
+		static ConfigurationInterne configInterne;
 };
 
