@@ -4,8 +4,7 @@
 #include "DemoSha224.h"
 #include "DemoSocket.h"
 #include "DemoThreads.h"
-#include "Directorythread.h"
-
+#include "ServerThread.h"#include "Directorythread.h"
 int main( int argc, char *argv[] ) {
 	std::cout << "** Welcome to this demo skeleton." << std::endl;
 
@@ -15,12 +14,16 @@ int main( int argc, char *argv[] ) {
 	}
 
 	std::cout << "** Time to play now... enjoy!" << std::endl;
-	testThreads();
+	//testThreads();
 	//directoryBrowse();
 
 	//testException();
 	//testSha224();
 	//testSocket();
+	
+		
+	/*Server();*/
+	system("pause");
 
 	std::cout << "** Goodbye" << std::endl;
 	system("PAUSE");
