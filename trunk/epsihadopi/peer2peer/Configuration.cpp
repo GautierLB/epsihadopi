@@ -13,13 +13,10 @@ Configuration::~Configuration()
 {
 }
 
-Configuration* Configuration::getConfig()
+Configuration* Configuration::getInstance()
 {
-	if (config != NULL){
-		return config;
-	} else {
-		Configuration *toCreate = new Configuration();
-		config = toCreate;
-		return config;
+	if (NULL == config){
+		config = new Configuration();
 	}
+	return config;
 }
