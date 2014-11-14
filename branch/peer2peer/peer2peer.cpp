@@ -7,6 +7,8 @@
 #include "DemoThreads.h"
 #include "DemoFiles.h"
 #include "DemoDateTime.h"
+#include "Directorythread.h"
+#include "Configuration.h"
 
 #include "CProtocolFrame.h"
 #include "CProtocolFrameNotifyNewFileRequest.h"
@@ -56,7 +58,8 @@ int main( int argc, char *argv[] ) {
 	std::cout << "** Welcome to this demo skeleton." << std::endl;
 
 	//demos( argc, argv );
-
+	Configuration config = Configuration::getInstance();
+	std::cout << config.getNbConnectionServeur() << std::endl;
 	std::cout << "** Goodbye" << std::endl;
 	system( "pause" );
 	return 0;

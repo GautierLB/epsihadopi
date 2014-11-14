@@ -417,5 +417,6 @@
     <None Include="..\libs\pthreads\docs\sem_init.html">
       <Filter>Documentation\pthreads</Filter>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
