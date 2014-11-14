@@ -9,6 +9,7 @@
 #include "DemoDateTime.h"
 #include "Directorythread.h"
 #include "Configuration.h"
+#include "MainThread.h"
 
 #include "CProtocolFrame.h"
 #include "CProtocolFrameNotifyNewFileRequest.h"
@@ -60,6 +61,7 @@ int main( int argc, char *argv[] ) {
 	//demos( argc, argv );
 	Configuration config = Configuration::getInstance();
 	std::cout << config.getNbConnectionServeur() << std::endl;
+	mainThread();
 	std::cout << "** Goodbye" << std::endl;
 	system( "pause" );
 	return 0;

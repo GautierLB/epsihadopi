@@ -234,6 +234,7 @@
     <ClInclude Include="EBlockAvailability.h" />
     <ClInclude Include="EProtocolCodeOp.h" />
     <ClInclude Include="EMessageSeverity.h" />
+    <ClInclude Include="MainThread.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
@@ -247,6 +248,7 @@
     <ClCompile Include="DemoSocket.cpp" />
     <ClCompile Include="DemoThreads.cpp" />
     <ClCompile Include="Directorythread.cpp" />
+    <ClCompile Include="MainThread.cpp" />
     <ClCompile Include="peer2peer.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
