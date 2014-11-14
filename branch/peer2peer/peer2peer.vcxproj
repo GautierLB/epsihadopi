@@ -229,6 +229,7 @@
     <ClInclude Include="DemoSha224.h" />
     <ClInclude Include="DemoSocket.h" />
     <ClInclude Include="DemoThreads.h" />
+    <ClInclude Include="Directorythread.h" />
     <ClInclude Include="EBlockAvailability.h" />
     <ClInclude Include="EProtocolCodeOp.h" />
     <ClInclude Include="EMessageSeverity.h" />
@@ -244,6 +245,7 @@
     <ClCompile Include="DemoSha224.cpp" />
     <ClCompile Include="DemoSocket.cpp" />
     <ClCompile Include="DemoThreads.cpp" />
+    <ClCompile Include="Directorythread.cpp" />
     <ClCompile Include="peer2peer.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
