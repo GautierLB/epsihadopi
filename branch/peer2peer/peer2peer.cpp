@@ -67,6 +67,5 @@ int main( int argc, char *argv[] ) {
 	std::cout << "** Temps entre chaque scan : " << config.getTimeOutScan() <<endl;
 	mainThread();
 	std::cout << "** Goodbye" << std::endl;
-	system( "pause" );
 	return 0;
 }

@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include <iostream>
 #include <pthread.h>
+#include <conio.h>
 #include "MainThread.h"
 
 void *MainThreadFunc( void *p_arg ) {
@@ -8,9 +9,8 @@ void *MainThreadFunc( void *p_arg ) {
 	std::cout << "Press Esc to quit.\n";
 	do
     {
-		c = std::getchar();
-		std::cout << c << std::endl;
-    }while (c != 101);
+		c = _getch();
+    }while (c != 27);
 	return nullptr;
 }
 
