@@ -21,13 +21,13 @@ void mainThread() {
 	std::cout << std::endl;
 	std::cout << "--------------------------------------------------" << std::endl;
 
-	std::cout << "** Creating thread..." << std::endl;
+	std::cout << "** Creating Main thread..." << std::endl;
 	if (pthread_create( &t1, 0, MainThreadFunc, (void *) 1 ) != 0) {
-		std::cerr << "** FAIL 1" << std::endl;
+		std::cerr << "** FAIL Creation Main Thread" << std::endl;
 		return;
 	}
 	else {
-		std::cout << "** Thread 1 creation OK" << std::endl;
+		std::cout << "** Main Thread creation OK" << std::endl;
 	}
 
 	std::cout << "** Waiting..." << std::endl;
