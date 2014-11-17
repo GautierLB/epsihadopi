@@ -1,8 +1,9 @@
 #include "Fichier.h"
 
 
-Fichier::Fichier()
+Fichier::Fichier(string p_NomFichier)
 {
+	NomFichier = p_NomFichier;
 }
 
 
