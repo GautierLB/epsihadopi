@@ -12,13 +12,14 @@ class ConfigurationInterne
 	
 
 public:
-	ConfigurationInterne();
 	~ConfigurationInterne();
-	ConfigurationInterne* getConfig();
-	static vector<Fichier *> ListeFichier;
-	static vector<Block *>  ListeBlock;
+	static ConfigurationInterne& getInstance();
+	vector<Fichier *> ListeFichier;
+	vector<Block *>  ListeBlock;
 
 private:
-		static ConfigurationInterne configInterne;
+	ConfigurationInterne();
+	static ConfigurationInterne m_instance;
+	static ConfigurationInterne configInterne;
 };
 

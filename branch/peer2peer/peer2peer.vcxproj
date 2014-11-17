@@ -211,6 +211,7 @@
     <ClInclude Include="..\libs\socket\include\CSocket.h" />
     <ClInclude Include="..\libs\socket\include\CSocketIOException.h" />
     <ClInclude Include="..\libs\socket\include\CSocketIp4.h" />
+    <ClInclude Include="Block.h" />
     <ClInclude Include="Configuration.h" />
     <ClInclude Include="ConfigurationInterne.h" />
     <ClInclude Include="CProtocolFrame.h" />
@@ -235,11 +236,13 @@
     <ClInclude Include="EBlockAvailability.h" />
     <ClInclude Include="EProtocolCodeOp.h" />
     <ClInclude Include="EMessageSeverity.h" />
+    <ClInclude Include="Fichier.h" />
     <ClInclude Include="MainThread.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Block.cpp" />
     <ClCompile Include="Configuration.cpp" />
     <ClCompile Include="ConfigurationInterne.cpp" />
     <ClCompile Include="CProtocolFrame.cpp" />
@@ -250,6 +253,7 @@
     <ClCompile Include="DemoSocket.cpp" />
     <ClCompile Include="DemoThreads.cpp" />
     <ClCompile Include="Directorythread.cpp" />
+    <ClCompile Include="Fichier.cpp" />
     <ClCompile Include="MainThread.cpp" />
     <ClCompile Include="peer2peer.cpp" />
     <ClCompile Include="stdafx.cpp" />

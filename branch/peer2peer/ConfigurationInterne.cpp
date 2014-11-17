@@ -7,11 +7,18 @@ void ConfigurationInterne::DeclarationListeFichier(int nbFichier)
 
 }*/
 
+ConfigurationInterne ConfigurationInterne::m_instance=ConfigurationInterne();
+
 ConfigurationInterne::ConfigurationInterne()
 {
 }
 
-
 ConfigurationInterne::~ConfigurationInterne()
 {
+
+}
+
+ConfigurationInterne& ConfigurationInterne::getInstance()
+{
+    return m_instance;
 }
