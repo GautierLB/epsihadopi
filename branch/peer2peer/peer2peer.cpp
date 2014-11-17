@@ -42,7 +42,7 @@ void demos( int argc, char *argv[] ) {
 	f1.m_versionMajor = 1;
 	f1.m_versionMinor = 1;
 	f1.m_codeOp = 64;
-	f1.serialize( std::string( "d:\\CProtocolFrame.bin" ) );
+	f1.serialize( std::string( "C:\\Users\Gautier\Dropbox\Perso\Multithreading C++\StarterKitUpdated\peer2peer\CProtocolFrame.bin" ) );
 
 	f2.m_versionMajor = 1;
 	f2.m_versionMinor = 1;
@@ -50,7 +50,7 @@ void demos( int argc, char *argv[] ) {
 	f2.m_padding1 = 0;
 	f2.m_fineNameLength = 12;
 	memset( &f2.m_fileRawSha224, 0xAA, sizeof( f2.m_fileRawSha224 ) );
-	f2.serialize( std::string( "d:\\CProtocolFrameGetFileListRequest.bin" ) );
+	f2.serialize( std::string( "C:\\Users\Gautier\Dropbox\Perso\Multithreading C++\StarterKitUpdated\peer2peer\CProtocolFrameGetFileListRequest.bin" ) );
 	return;
 }
 

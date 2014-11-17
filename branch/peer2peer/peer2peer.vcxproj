@@ -212,6 +212,7 @@
     <ClInclude Include="..\libs\socket\include\CSocketIOException.h" />
     <ClInclude Include="..\libs\socket\include\CSocketIp4.h" />
     <ClInclude Include="Configuration.h" />
+    <ClInclude Include="ConfigurationInterne.h" />
     <ClInclude Include="CProtocolFrame.h" />
     <ClInclude Include="CProtocolFrameMessage.h" />
     <ClInclude Include="CProtocolFrameGetBlockListOfFileRequest.h" />
@@ -240,6 +241,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Configuration.cpp" />
+    <ClCompile Include="ConfigurationInterne.cpp" />
     <ClCompile Include="CProtocolFrame.cpp" />
     <ClCompile Include="DemoDateTime.cpp" />
     <ClCompile Include="DemoException.cpp" />

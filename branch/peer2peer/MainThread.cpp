@@ -10,7 +10,7 @@ void *MainThreadFunc( void *p_arg ) {
     {
 		c = std::getchar();
 		std::cout << c << std::endl;
-    }while (c != 27);
+    }while (c != 101);
 	return nullptr;
 }
 
