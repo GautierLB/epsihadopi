@@ -60,7 +60,11 @@ int main( int argc, char *argv[] ) {
 
 	//demos( argc, argv );
 	Configuration config = Configuration::getInstance();
-	std::cout << config.getNbConnectionServeur() << std::endl;
+	std::cout << "** Initialisation du programme" << std::endl;
+	std::cout << "** Nombre de connection maximales serveur : " << config.getNbConnectionServeur() <<endl;
+	std::cout << "** Nombre d'envois simultanes maximum : " << config.getNbEnvoieSimultane() <<endl;
+	std::cout << "** Nombre receptions simultanees maximum : " << config.getNbReceptionSimultane() <<endl;
+	std::cout << "** Temps entre chaque scan : " << config.getTimeOutScan() <<endl;
 	mainThread();
 	std::cout << "** Goodbye" << std::endl;
 	system( "pause" );
