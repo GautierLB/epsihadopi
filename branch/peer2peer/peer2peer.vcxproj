@@ -234,6 +234,7 @@
     <ClInclude Include="DemoThreads.h" />
     <ClInclude Include="Directorythread.h" />
     <ClInclude Include="EBlockAvailability.h" />
+    <ClInclude Include="ecriture.h" />
     <ClInclude Include="EProtocolCodeOp.h" />
     <ClInclude Include="EMessageSeverity.h" />
     <ClInclude Include="Fichier.h" />
@@ -253,6 +254,7 @@
     <ClCompile Include="DemoSocket.cpp" />
     <ClCompile Include="DemoThreads.cpp" />
     <ClCompile Include="Directorythread.cpp" />
+    <ClCompile Include="ecriture.cpp" />
     <ClCompile Include="Fichier.cpp" />
     <ClCompile Include="MainThread.cpp" />
     <ClCompile Include="peer2peer.cpp" />

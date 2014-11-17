@@ -8,8 +8,10 @@
 #include "DemoFiles.h"
 #include "DemoDateTime.h"
 #include "Directorythread.h"
+#include "../libs/core/include/CDateTime.h"
 #include "Configuration.h"
 #include "MainThread.h"
+#include "ecriture.h"
 
 #include "CProtocolFrame.h"
 #include "CProtocolFrameNotifyNewFileRequest.h"
@@ -59,6 +61,11 @@ int main( int argc, char *argv[] ) {
 	std::cout << "** Welcome to this demo skeleton." << std::endl;
 
 	//demos( argc, argv );
+
+	string s = "Thread numero 1000"; //A remplacer par la ligne à insérer dans le fichier de log
+	LOG affiche; //Variable du type de la classe
+    affiche.ecrire(s); //On appelle la méthode ecrire() avec le paramètre à mettre dans le fichier de log
+
 	Configuration config = Configuration::getInstance();
 	std::cout << "** Initialisation du programme" << std::endl;
 	std::cout << "** Nombre de connection maximales serveur : " << config.getNbConnectionServeur() <<endl;

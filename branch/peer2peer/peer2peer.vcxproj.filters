@@ -230,6 +230,9 @@
     <ClInclude Include="Fichier.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ecriture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -275,6 +278,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Fichier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ecriture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
