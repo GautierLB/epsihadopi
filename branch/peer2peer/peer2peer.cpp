@@ -59,7 +59,34 @@ void demos( int argc, char *argv[] ) {
 
 int main( int argc, char *argv[] ) {
 	std::cout << "** Welcome to this demo skeleton." << std::endl;
-
+	int i=0;
+	for (i = 0; i< 4; i++)
+	{
+		if (argv[i] != nullptr)
+		{
+			std::cout << "** Dump parameter :" << i << argv[i] << std::endl;
+		} 
+		else 
+		{
+			std::cout << "** Not enough parameters, using default values." << std::endl;
+		}
+	}
+	Configuration config = Configuration::getInstance();
+	if (argv[1] != nullptr)
+	{
+		config.setNbConnectionServeur(atoi(argv[1]));
+		std::cout << "** Utilisation du parametre reçu en ligne de commande pour le nombre de connections maximales serveur :" << argv[1] << std::endl;
+	} 
+	if (argv[2] != nullptr)
+	{
+		config.setNbEnvoieSimultane(atoi(argv[2]));
+		std::cout << "** Utilisation du parametre reçu en ligne de commande pour le nombre d'envois maximale serveur :" << argv[2] << std::endl;
+	}
+	if (argv[3] != nullptr)
+	{
+		config.setNbReceptionSimultane(atoi(argv[3]));
+		std::cout << "** Utilisation du parametre reçu en ligne de commande pour le nombre de receptions maximales simultanees serveur :" << argv[3] << std::endl;
+	}
 	//demos( argc, argv );
 
 	string s = "Thread numero 1000"; //A remplacer par la ligne à insérer dans le fichier de log
