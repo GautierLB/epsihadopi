@@ -8,12 +8,12 @@ using namespace std;
 
 class LOG
 {
-public:
-	LOG();
-	string ecrire(const string &s);
-	~LOG();
+	public:
+		LOG();
+		string ecrire(const string &s);
+		~LOG();
 
-private:
-	string s;
+	private:
+		string s;
 };
 #endif

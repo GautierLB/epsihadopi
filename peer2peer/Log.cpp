@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "ecriture.h"
+#include "Log.h"
 #include "../libs/core/include/CDateTime.h"
 #include "stdafx.h"
 
