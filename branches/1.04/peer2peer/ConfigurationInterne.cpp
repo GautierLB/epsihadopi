@@ -30,3 +30,10 @@ void ConfigurationInterne::addServeur(CSocketIp4 *toadd)
 	ListeServeur.push_back(toadd);
 	sem_post(&mutex);
 }
+
+void ConfigurationInterne::addFichier(Fichier f)
+{
+	sem_wait(&mutex);
+	ListeFichier.push_back(f);
+	sem_post(&mutex);
+}

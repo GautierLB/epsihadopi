@@ -6,11 +6,11 @@ using namespace std;
 class Fichier
 {
 	public:
-		Fichier(string p_NomFichier,int p_hash);
+		Fichier(string p_NomFichier,string p_hash);
 		~Fichier();
 	private:
 		string NomFichier;
-		int EmpreinteNumerique;
+		string EmpreinteNumerique;
 		Block TableauBlocks[];
 };
 

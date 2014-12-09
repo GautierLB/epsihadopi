@@ -18,7 +18,8 @@ public:
 	~ConfigurationInterne();
 	static ConfigurationInterne& getInstance();
 	void ConfigurationInterne::addServeur(CSocketIp4 *toadd);
-	vector<Fichier *> ListeFichier;
+	void ConfigurationInterne::addFichier(Fichier f);
+	vector<Fichier> ListeFichier;
 	vector<Block *>  ListeBlock;
 	vector<CSocketIp4 *> ListeServeur;
 
