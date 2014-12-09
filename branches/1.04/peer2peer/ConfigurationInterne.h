@@ -1,5 +1,5 @@
 #pragma once
-#include <vector>
+#include <list>
 #include "Fichier.h"
 #include "Block.h"
 #include "CSocketIp4.h"
@@ -17,11 +17,11 @@ class ConfigurationInterne
 public:
 	~ConfigurationInterne();
 	static ConfigurationInterne& getInstance();
-	void ConfigurationInterne::addServeur(CSocketIp4 *toadd);
+	void ConfigurationInterne::addServeur(string *toadd);
 	void ConfigurationInterne::addFichier(Fichier f);
 	vector<Fichier> ListeFichier;
 	vector<Block *>  ListeBlock;
-	vector<CSocketIp4 *> ListeServeur;
+	list<string *> ListeServeur;
 
 private:
 	ConfigurationInterne();

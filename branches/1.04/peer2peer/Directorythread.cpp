@@ -9,7 +9,7 @@ unsigned char isFile =0x8;
 
 void directoryBrowse() {
 
-	ConfigurationInterne config = ConfigurationInterne::getInstance();
+/*	ConfigurationInterne config = ConfigurationInterne::getInstance();
     struct dirent *lecture;
     DIR *rep;
     rep = opendir(".");
@@ -31,5 +31,5 @@ void directoryBrowse() {
 
     }
 	
-    closedir(rep);
+    closedir(rep);*/
 }

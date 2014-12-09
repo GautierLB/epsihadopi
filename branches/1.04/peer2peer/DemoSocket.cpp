@@ -1,10 +1,10 @@
 #include "stdafx.h"
 #include <iostream>
 #include "DemoSocket.h"
-
+#include "DetectionThread.h"
 #include "CSocketIp4.h"
 #include "CException.h"
-
+#include "ConfigurationInterne.h"
 
 void testNameResolution() {
 	std::vector<std::string> ipAddresses;
@@ -14,10 +14,25 @@ void testNameResolution() {
 	std::cout << std::endl;
 	std::cout << "Getting local IP addresses..." << std::endl;
 	ipAddresses = s.getLocalIpAddresses();
+	std:: string adressip;
+
 	for (size_t i = 0; i < ipAddresses.size(); i++) {
 		std::cout << "- " << ipAddresses[ i ] << "   " << (s.isIpAddressPrivate( ipAddresses[ i ].c_str() ) ? "(private)" : "(public)") << std::endl;
+		adressip=ipAddresses[ i ];
 	}
+	
+	adressip=adressip.substr(0,adressip.rfind(".")+1);
+	adressip="169.254.160.";
+	std::cout << adressip<< std::endl;
+/*	for (int i = 80; i < 255; i++){
+			std:: string*adressiptemp =new std::string(adressip);
 
+			*adressiptemp=*adressiptemp+std::to_string(i);
+			std::cout << *adressiptemp<< std::endl;
+			//testConnectGoogleAsHttpClient(adressiptemp);
+			DetectionThread(adressiptemp);
+		}	*/
+	DetectionMainThread();
 	// Get list of all Google IPv4 addresses on host "www"
 	std::cout << std::endl;
 	std::cout << "Resolving www.google.com..." << std::endl;
@@ -30,18 +45,21 @@ void testNameResolution() {
 
 
 // This procedure connects to Google, asks it to send us its home page and displays result as raw text
-void testConnectGoogleAsHttpClient() {
+void testConnectGoogleAsHttpClient(std::string ip) {
 	CSocketIp4 s;
+	s.initEngine();
 	std::string data = "";
 	int recvCount = 0;
 	char buffer[ 1024 ];
-
-
+	//const char* test=ip->c_str();
+		ConfigurationInterne config= ConfigurationInterne::getInstance();
+	config.addServeur(&ip);
 	// Connect to remote host
 	std::cout << std::endl;
-	std::cout << "Connecting to www.google.com..." << std::endl;
-	s.connect( "www.google.com", 80, 2500 );
-
+	std::cout << "Connecting to " << ip << std::endl;
+	try{
+	s.connect( ip.c_str(), 6699, 2500 );
+	
 	// Show information about endpoints
 	std::cout << "Getting endpoints information..." << std::endl;
 	std::cout << "- local socket is bound to IPv4 " << s.getLocalEndpointIp() << " on port " << s.getLocalEndpointPort() << std::endl;
@@ -84,7 +102,14 @@ void testConnectGoogleAsHttpClient() {
 	std::cout << "----------------------------------------" << std::endl;
 	std::cout << data << std::endl;
 	std::cout << "----------------------------------------" << std::endl;
-
+	}
+	catch(CConnectionException){
+		std::cout << "ECHEC:"<<ip << std::endl;
+	}
+	catch(CException e){
+		std::cout << "ECHEC:"<<e.getMessage() << std::endl;
+	}
+	s.uninitEngine();
 	return;
 }
 
@@ -95,9 +120,9 @@ void testHttpServer() {
 	std::cout << std::endl;
 	std::cout << "Creating HTTP server on port 666..." << std::endl;
 
-	s.server( 666, 5 );
+	s.server( 6699, 5 );
 	for (;;) {
-		std::string data, request, tmp;
+		std::string data, request;
 		int recvCount = 0;
 		char buffer[ 1024 ];
 
@@ -123,17 +148,10 @@ void testHttpServer() {
 			}
 		} while (recvCount > 0 && remoteClient->waitForRead( 100 ) != SOCKET_TIMEOUT);
 
-		// For pleasure, let's do a quick HTTP parsing
-		std::cout << "- parsing request..." << std::endl;
-		tmp = request;
-		if (tmp.find( '\r' ) > 0) {
-			tmp = tmp.substr( 0, tmp.find( '\r' ) );
-		}
-		std::cout << "- request is \"" << tmp << "\"" << std::endl;
-
 		// Send him the same information everytime
-		// Oww! crap! No doctype ... and crappy headers too. But it is working, so enjoy.
+		// Oww! crap! No doctype ... and crappy headers too. but it works, so enjoy.
 		std::cout << "- sending fake page..." << std::endl;
+
 		data = "HTTP/1.1 200 OK\r\n"
 			"Host: hello.it.s.me\r\n"
 			"Server: my-server\r\n"
@@ -143,22 +161,28 @@ void testHttpServer() {
 			"<html>"
 			"  <head>"
 			"    <title>Hello from local HTTP server</title>"
-			"    <style type='text/css'>"
-			"    h1 { color: navy; font-variant: small-caps; }"
-			"    pre { background-color: #EEE; border: 1px solid #CCC; }"
-			"    </style>"
+			"    <style type='text/css'>h1 { color: navy; font-variant: small-caps; }</style>"
 			"  </head>"
 			"  <body>"
 			"    <h1>You should know that ...</h1>"
 			"    <ul>"
 			"      <li>you just created your first HTTP server</li>"
-			"      <li>your client connected from IP address <strong>" + remoteClient->getRemoteEndpointIp() + "</strong> and port <strong>" + std::to_string( remoteClient->getRemoteEndpointPort() ) + "</strong></li>"
+			"      <li>your client uses IP address " + remoteClient->getRemoteEndpointIp() + "</li>"
 			"    </ul>"
-			"    <h1>Your client sent those headers</h1>"
+			"    <h1>Your client sends those headers</h1>"
 			"    <pre>" + request + "</pre>"
 			"  </body>"
 			"</html>";
-		remoteClient->send( data.c_str(), static_cast<unsigned short>(data.length()), NO_TIMEOUT );
+		char tt[20];
+		tt[0] = 'B';
+		tt[1] = 'O';
+		tt[2] = 'N';
+		tt[3] = 'J';
+		tt[4] = 'O';
+		tt[5] = 'U';
+		tt[6] = 'R';
+		tt[7] = '\0';
+		remoteClient->send( tt, static_cast<unsigned short>(data.length()), NO_TIMEOUT );
 
 		// Disconnect
 		remoteClient->shutdown();
@@ -169,6 +193,17 @@ void testHttpServer() {
 	return;
 }
 
+void testfonction(std::string* ip) {
+	std::cout << "Coucou" << *ip<< std::endl;
+	for (int i = 0; i < 50; i++){
+			std:: string*adressiptemp =new std::string(*ip);
+
+			*adressiptemp=*adressiptemp+std::to_string(i);
+			std::cout << *adressiptemp<< std::endl;
+			//testConnectGoogleAsHttpClient(adressiptemp);
+			DetectionThread(adressiptemp);
+		}	
+}
 
 void testSocket() {
 	std::cout << std::endl;
@@ -178,9 +213,11 @@ void testSocket() {
 
 	try {
 		CSocket::initEngine();
-		testNameResolution();
-		testConnectGoogleAsHttpClient();
-		testHttpServer();
+		//testNameResolution();
+		DetectionMainThread();
+		//testHttpServer();
+		//testConnectGoogleAsHttpClient();
+		
 	}
 	//	catch (CBrokenSocketException &e) { }
 	//	catch (CConnectionException &e) { }
