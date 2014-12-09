@@ -27,6 +27,6 @@ ConfigurationInterne& ConfigurationInterne::getInstance()
 void ConfigurationInterne::addServeur()
 {
 	sem_wait(&mutex);
-	ListeFichier
+	ListeFichier;
 	sem_post(&mutex);
 }
