@@ -24,9 +24,9 @@ ConfigurationInterne& ConfigurationInterne::getInstance()
     return m_instance;
 }
 
-void ConfigurationInterne::addServeur()
+void ConfigurationInterne::addServeur(Fichier *toadd)
 {
 	sem_wait(&mutex);
-	ListeFichier;
+	ListeFichier.push_back(toadd);
 	sem_post(&mutex);
 }

@@ -16,7 +16,7 @@ class ConfigurationInterne
 public:
 	~ConfigurationInterne();
 	static ConfigurationInterne& getInstance();
-	void ConfigurationInterne::addServeur();
+	void ConfigurationInterne::addServeur(Fichier *toadd);
 	vector<Fichier *> ListeFichier;
 	vector<Block *>  ListeBlock;
 
