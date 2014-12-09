@@ -24,9 +24,9 @@ ConfigurationInterne& ConfigurationInterne::getInstance()
     return m_instance;
 }
 
-void ConfigurationInterne::addServeur(Fichier *toadd)
+void ConfigurationInterne::addServeur(CSocketIp4 *toadd)
 {
 	sem_wait(&mutex);
-	ListeFichier.push_back(toadd);
+	ListeServeur.push_back(toadd);
 	sem_post(&mutex);
 }
