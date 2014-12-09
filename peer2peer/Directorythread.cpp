@@ -4,6 +4,7 @@
 #include "Fichier.h"
 #include <dirent.h>
 #include <CLibSha224.h>
+unsigned char isFile =0x8;
 
 
 void directoryBrowse() {
@@ -15,15 +16,18 @@ void directoryBrowse() {
     while ((lecture = readdir(rep))) {
         printf("%s\n", lecture->d_name);
 
-		if (*lecture->d_name == "." || *lecture->d_name == "." ) {
+		if (lecture->d_name == "." || lecture->d_name == ".." ) 
+		{
 			continue;
 		}
-		if (lecture->d_type == isFile()){
+
+		if (lecture->d_type == isFile)
+		{
 			continue;
 		}
-		std::string hash = CLibSha224(lecture->d_name);
-		Fichier f =  Fichier(lecture->d_name, hash);
-		config.ListeFichier.push_back(f);
+		CLibSha224 hash = CLibSha224(lecture->d_name);
+		Fichier f =  Fichier(lecture->d_name, hash.getHash());
+		config.addFichier(f);
 
     }
 	
