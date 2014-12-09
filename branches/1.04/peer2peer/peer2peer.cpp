@@ -9,6 +9,7 @@
 #include "DemoDateTime.h"
 #include "DemoSerialize.h"
 #include "Configuration.h"
+#include "Directorythread.h"
 
 #include "CProtocolFrame.h"
 #include "CProtocolFrameNotifyNewFileRequest.h"
@@ -39,6 +40,10 @@ void demos( int argc, char *argv[] ) {
 
 
 int main( int argc, char *argv[] ) {
+
+	Configuration config = Configuration::getInstance();
+
+
 	std::cout << "** Welcome to this demo skeleton." << std::endl;
 	int i=0;
 	for (i = 0; i< 4; i++)
@@ -52,7 +57,7 @@ int main( int argc, char *argv[] ) {
 			std::cout << "** Not enough parameters, using default values." << std::endl;
 		}
 	}
-	Configuration config = Configuration::getInstance();
+	
 	if (argv[1] != nullptr)
 	{
 		config.setNbConnectionServeur(atoi(argv[1]));
@@ -68,7 +73,10 @@ int main( int argc, char *argv[] ) {
 		config.setNbReceptionSimultane(atoi(argv[3]));
 		std::cout << "** Utilisation du parametre recu en ligne de commande pour le nombre de receptions maximales simultanees serveur :" << argv[3] << std::endl;
 	}
+
 	//demos( argc, argv );
+
+	directoryBrowse();
 
 	string s = "Initalisation du programme, parametres nombre de connections serveur : " + std::to_string(config.getNbConnectionServeur()) + " ,nombre d'envois simultanes : " + std::to_string(config.getNbEnvoieSimultane()) + " , nombre de receptions simultanees : " + std::to_string(config.getNbReceptionSimultane()); //A remplacer par la ligne à insérer dans le fichier de log
 	LOG affiche; //Variable du type de la classe

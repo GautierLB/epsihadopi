@@ -11,3 +11,8 @@ Fichier::Fichier(string p_NomFichier, string p_hash)
 Fichier::~Fichier()
 {
 }
+
+std::string Fichier::getNomFichier()
+{
+	return NomFichier;
+}
