@@ -237,6 +237,7 @@
     <ClInclude Include="DemoSha224.h" />
     <ClInclude Include="DemoSocket.h" />
     <ClInclude Include="DemoThreads.h" />
+    <ClInclude Include="DetectionThread.h" />
     <ClInclude Include="Directorythread.h" />
     <ClInclude Include="EBlockAvailability.h" />
     <ClInclude Include="Log.h" />
@@ -259,6 +260,8 @@
     <ClCompile Include="DemoSha224.cpp" />
     <ClCompile Include="DemoSocket.cpp" />
     <ClCompile Include="DemoThreads.cpp" />
+    <ClCompile Include="DetectionMaintThread.cpp" />
+    <ClCompile Include="DetectionThread.cpp" />
     <ClCompile Include="Directorythread.cpp" />
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="Fichier.cpp" />
