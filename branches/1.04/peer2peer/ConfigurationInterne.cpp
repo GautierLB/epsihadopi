@@ -1,27 +1,25 @@
 #include "ConfigurationInterne.h"
-
-/*/
-void ConfigurationInterne::DeclarationListeFichier(int nbFichier)
-{
-	static  liste_fichier[nbFichier];
-
-}*/
-
 ConfigurationInterne ConfigurationInterne::m_instance=ConfigurationInterne();
-
 ConfigurationInterne::ConfigurationInterne()
 {
 	sem_init(&mutex, 0, 10);
+	std::list<string> ListeServeur();
 }
 
 ConfigurationInterne::~ConfigurationInterne()
 {
-
+	 cout<<"Creation"<<endl;
 }
 
-ConfigurationInterne& ConfigurationInterne::getInstance()
+ConfigurationInterne& ConfigurationInterne::getInstanceRef()
 {
-    return m_instance;
+	static ConfigurationInterne m_instance;
+	return m_instance;
+}
+ConfigurationInterne* ConfigurationInterne::getInstance()
+{
+	ConfigurationInterne& interne = ConfigurationInterne::getInstanceRef();
+	return &interne;
 }
 
 void ConfigurationInterne::addServeur(string *toadd)
