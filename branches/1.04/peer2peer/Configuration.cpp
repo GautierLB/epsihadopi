@@ -2,7 +2,7 @@
 
 using namespace std;
 
-Configuration Configuration::m_instance=Configuration();
+//Configuration Configuration::m_instance=Configuration();
 
 Configuration::Configuration()
 {
