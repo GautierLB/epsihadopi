@@ -1,10 +1,13 @@
 #pragma once
+#include "stdafx.h"
 #include <list>
+#include <pthread.h> 
+#include <semaphore.h> 
 #include "Fichier.h"
 #include "Block.h"
 #include "CSocketIp4.h"
-#include <pthread.h> 
-#include <semaphore.h> 
+
+
 
 
 using namespace std;
