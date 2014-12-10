@@ -1,4 +1,5 @@
 #include "stdafx.h"
+#include "Directorythread.h"
 
 
 void *MainThreadFunc( void *p_arg ) {

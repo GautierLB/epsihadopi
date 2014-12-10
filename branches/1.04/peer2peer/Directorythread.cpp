@@ -2,14 +2,17 @@
 #include <sys/types.h>
 #include "ConfigurationInterne.h"
 #include "Fichier.h"
+#include <pthread.h>
 #include <dirent.h>
 #include <CLibSha224.h>
+#include "Directorythread.h"
 
 
-unsigned int isDirectory =16384;	//folder
+int isDirectory =16384;	//folder
 
 
-void *directoryBrowse() {
+void *DirectoryBrowseFunc(void *p_arg)
+{
 
 	//pthread_t t1;
 	ConfigurationInterne config = *ConfigurationInterne::getInstance();
@@ -36,7 +39,7 @@ void *directoryBrowse() {
     }
 	vector<Fichier> ls = config.ListeFichier;
 	//for(int i=0;ls.size();i++)
-	int i=0;
+	unsigned int i=0;
 	while(i != ls.size())
 	{// faire un while a la place
 
@@ -52,9 +55,11 @@ void *directoryBrowse() {
 	}
 	
     closedir(rep);
+	return nullptr;
 }
 
-void DirectoryThread() {
+void directoryThread() 
+{
 	pthread_t t1;
 	
 	void *result = nullptr;
@@ -62,13 +67,15 @@ void DirectoryThread() {
 	std::cout << std::endl;
 	std::cout << "--------------------------------------------------" << std::endl;
 
-	std::cout << "** Creating Main thread..." << std::endl;
-	if (pthread_create( &t1, 0, directoryBrowse, () 1 ) != 0) {
-		std::cerr << "** FAIL Creation Main Thread" << std::endl;
+	std::cout << "** Creating Directory thread..." << std::endl;
+	if (pthread_create( &t1, 0,DirectoryBrowseFunc,(void *) 1) != 0) 
+	{
+		std::cerr << "** FAIL Creation Directory Thread" << std::endl;
 		return;
 	}
-	else {
-		std::cout << "** Main Thread creation OK" << std::endl;
+	else 
+	{
+		std::cout << "** Directory Thread creation OK" << std::endl;
 	}
 
 	std::cout << "** Waiting..." << std::endl;
