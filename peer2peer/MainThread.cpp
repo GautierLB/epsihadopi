@@ -1,10 +1,13 @@
 #include "stdafx.h"
 #include "Directorythread.h"
+#include "DetectionMainThread.h"
+
 
 
 void *MainThreadFunc( void *p_arg ) {
 	int c;
 	std::cout << "Press Esc to quit.\n";
+	DetectionMainThread();
 	do
     {
 		directoryThread();

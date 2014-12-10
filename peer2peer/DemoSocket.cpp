@@ -2,11 +2,12 @@
 #include <iostream>
 #include "DemoSocket.h"
 #include "DetectionThread.h"
+#include "VerificationThread.h"
 #include "CSocketIp4.h"
 #include "CException.h"
 #include "ConfigurationInterne.h"
 
-void testNameResolution() {
+string testNameResolution() {
 	std::vector<std::string> ipAddresses;
 	CSocketIp4 s;
 
@@ -20,27 +21,28 @@ void testNameResolution() {
 		std::cout << "- " << ipAddresses[ i ] << "   " << (s.isIpAddressPrivate( ipAddresses[ i ].c_str() ) ? "(private)" : "(public)") << std::endl;
 		adressip=ipAddresses[ i ];
 	}
-	
-	adressip=adressip.substr(0,adressip.rfind(".")+1);
-	adressip="169.254.160.";
-	std::cout << adressip<< std::endl;
-/*	for (int i = 80; i < 255; i++){
-			std:: string*adressiptemp =new std::string(adressip);
 
-			*adressiptemp=*adressiptemp+std::to_string(i);
-			std::cout << *adressiptemp<< std::endl;
-			//testConnectGoogleAsHttpClient(adressiptemp);
-			DetectionThread(adressiptemp);
-		}	*/
-	DetectionMainThread();
+	adressip=adressip.substr(0,adressip.rfind(".")+1);
+	//adressip="169.254.160.";
+	std::cout << adressip<< std::endl;
+	/*	for (int i = 80; i < 255; i++){
+	std:: string*adressiptemp =new std::string(adressip);
+
+	*adressiptemp=*adressiptemp+std::to_string(i);
+	std::cout << *adressiptemp<< std::endl;
+	//testConnectGoogleAsHttpClient(adressiptemp);
+	DetectionThread(adressiptemp);
+	}	*/
+	//DetectionMainThread();
 	// Get list of all Google IPv4 addresses on host "www"
-	std::cout << std::endl;
-	std::cout << "Resolving www.google.com..." << std::endl;
-	ipAddresses = s.dnsResolve( "www.google.com" );
-	for (size_t i = 0; i < ipAddresses.size(); i++) {
-		std::cout << "- " << ipAddresses[ i ] << std::endl;
-	}
-	return;
+	//std::cout << std::endl;
+	//std::cout << "Resolving www.google.com..." << std::endl;
+	//ipAddresses = s.dnsResolve( "www.google.com" );
+	/*for (size_t i = 0; i < ipAddresses.size(); i++) {
+	std::cout << "- " << ipAddresses[ i ] << std::endl;
+	}*/
+
+	return adressip;
 }
 
 
@@ -58,50 +60,136 @@ void testConnectGoogleAsHttpClient(std::string ip) {
 	std::cout << std::endl;
 	std::cout << "Connecting to " << ip << std::endl;
 	try{
-	s.connect( ip.c_str(), 6699, 2500 );
-	
-	// Show information about endpoints
-	std::cout << "Getting endpoints information..." << std::endl;
-	std::cout << "- local socket is bound to IPv4 " << s.getLocalEndpointIp() << " on port " << s.getLocalEndpointPort() << std::endl;
-	std::cout << "- remote socket is bound to IPv4 " << s.getRemoteEndpointIp() << " on port " << s.getRemoteEndpointPort() << std::endl;
+		s.connect( ip.c_str(), 6699, 2500 );
 
-	// Send HTTP request
-	data = "GET / HTTP/1.1\r\n"
-		"Host: www.google.com\r\n"
-		"Connection: close\r\n"
-		"\r\n";
-	std::cout << "Sending request..." << std::endl;
-	s.send( data.c_str(), static_cast<unsigned short>(data.length()), NO_TIMEOUT );
+		// Show information about endpoints
+		std::cout << "Getting endpoints information..." << std::endl;
+		std::cout << "- local socket is bound to IPv4 " << s.getLocalEndpointIp() << " on port " << s.getLocalEndpointPort() << std::endl;
+		std::cout << "- remote socket is bound to IPv4 " << s.getRemoteEndpointIp() << " on port " << s.getRemoteEndpointPort() << std::endl;
 
-	// Wait for response
-	std::cout << "Waiting for response..." << std::endl;
-	s.waitForRead( NO_TIMEOUT );
+		// Send HTTP request
+		string chaine="114-EPSIHADOPY   100";
+		char tt[22];
 
-	// Receive whole response
-	data = "";
-	do {
+		for( int i=0;i<chaine.size();i++){
+			tt[i]=chaine[i];
+
+		}
+		tt[chaine.size()]='\0';
+		/*	tt[0] = '1';
+		tt[1] = '1';
+		tt[2] = '4';
+		tt[3] = '-';
+		tt[4] = 'E';
+		tt[5] = 'P';
+		tt[6] = 'S';
+		tt[7] = 'I';
+		tt[8] = 'H';
+		tt[9] = 'A';
+		tt[10] = 'D';
+		tt[11] = 'O';
+		tt[12] = 'D';
+		tt[13] = 'P';
+		tt[14] = 'Y';
+		tt[15] = ' ';
+		tt[16] = ' ';
+		tt[17] = ' ';
+		tt[18] = '1';
+		tt[19] = '0';
+		tt[20] = '0';
+		tt[21] = '\0';*/
+
+		data = "Coucouc";
+		std::cout << "Sending request..." << std::endl;
+		s.send( tt, static_cast<unsigned short>(strlen(tt)), NO_TIMEOUT );
+
+		// Wait for response
+		std::cout << "Waiting for response..." << std::endl;
+		s.waitForRead( NO_TIMEOUT );
+
+		// Receive whole response
+		data = "";
+		do {
+			memset( buffer, 0, sizeof( buffer ) );
+			std::cout << "Receiving response part..." << std::endl;
+			// When Google has finished sending me its data, it closes the connection ; thus I'm getting an exception but it's okay
+			try {
+				recvCount = s.recv( buffer, sizeof( buffer ), NO_TIMEOUT );
+				data += buffer;
+			}
+			catch (CBrokenSocketException) {
+				std::cout << "Connection closed by remote host..." << std::endl;
+				recvCount = 0;
+			}
+		} while (recvCount > 0);
+		std::cout << "COUCOU:" << data[2] << std::endl;
+		if(data[2]=='5'){
+			config->addServeur(ip);
+
+		}
+		/*if(data[2]=='5'){
+		std::cout << "TEST:" << data[2] << std::endl;
+		string chaine="116-EPSIHADOPY   100";
+		char tt[22];
+
+		for( int i=0;i<chaine.size();i++){
+		tt[i]=chaine[i];
+
+		}
+		/*tt[0] = '1';
+		tt[1] = '1';
+		tt[2] = '6';
+		tt[3] = '-';
+		tt[4] = 'E';
+		tt[5] = 'P';
+		tt[6] = 'S';
+		tt[7] = 'I';
+		tt[8] = 'H';
+		tt[9] = 'A';
+		tt[10] = 'D';
+		tt[11] = 'O';
+		tt[12] = 'D';
+		tt[13] = 'P';
+		tt[14] = 'Y';
+		tt[15] = ' ';
+		tt[16] = ' ';
+		tt[17] = ' ';
+		tt[18] = '1';
+		tt[19] = '0';
+		tt[20] = '0';
+		tt[21] = '\0';
+		s.connect( ip.c_str(), 6699, 2500 );	
+		data = "Coucouc";
+		std::cout << "Sending request..." << std::endl;
+		s.send( tt, static_cast<unsigned short>(strlen(tt)), NO_TIMEOUT );
+		}
+		std::cout << "Waiting for response..." << std::endl;
+		s.waitForRead( NO_TIMEOUT );
+
+		// Receive whole response
+		data = "";
+		do {
 		memset( buffer, 0, sizeof( buffer ) );
 		std::cout << "Receiving response part..." << std::endl;
 		// When Google has finished sending me its data, it closes the connection ; thus I'm getting an exception but it's okay
 		try {
-			recvCount = s.recv( buffer, sizeof( buffer ), NO_TIMEOUT );
-			data += buffer;
+		recvCount = s.recv( buffer, sizeof( buffer ), NO_TIMEOUT );
+		data += buffer;
 		}
 		catch (CBrokenSocketException) {
-			std::cout << "Connection closed by remote host..." << std::endl;
-			recvCount = 0;
+		std::cout << "Connection closed by remote host..." << std::endl;
+		recvCount = 0;
 		}
-	} while (recvCount > 0);
+		} while (recvCount > 0);
+		// Cleanly close the connection
+		std::cout << "Disconnecting..." << std::endl;
+		s.shutdown();
 
-	// Cleanly close the connection
-	std::cout << "Disconnecting..." << std::endl;
-	s.shutdown();
-
-	// Display result
-	std::cout << "And the response is..." << std::endl;
-	std::cout << "----------------------------------------" << std::endl;
-	std::cout << data << std::endl;
-	std::cout << "----------------------------------------" << std::endl;
+		// Display result
+		std::cout << "And the response is..." << std::endl;
+		std::cout << "----------------------------------------" << std::endl;
+		std::cout << data << std::endl;
+		std::cout << "----------------------------------------" << std::endl;*/
 	}
 	catch(CConnectionException){
 		std::cout << "ECHEC:"<<ip << std::endl;
@@ -113,7 +201,99 @@ void testConnectGoogleAsHttpClient(std::string ip) {
 	return;
 }
 
+void testexistant(std::string ip) {
+	CSocketIp4 s;
+	s.initEngine();
+	std::string data = "";
+	int recvCount = 0;
+	char buffer[ 1024 ];
+	//const char* test=ip->c_str();
+	ConfigurationInterne* config= ConfigurationInterne::getInstance();
 
+	// Connect to remote host
+	std::cout << std::endl;
+	std::cout << "Connecting to " << ip << std::endl;
+	try{
+		s.connect( ip.c_str(), 6699, 2500 );
+
+		// Show information about endpoints
+		std::cout << "Getting endpoints information..." << std::endl;
+		std::cout << "- local socket is bound to IPv4 " << s.getLocalEndpointIp() << " on port " << s.getLocalEndpointPort() << std::endl;
+		std::cout << "- remote socket is bound to IPv4 " << s.getRemoteEndpointIp() << " on port " << s.getRemoteEndpointPort() << std::endl;
+
+		// Send HTTP request
+		string chaine="114-EPSIHADOPY   100";
+		char tt[22];
+
+		for( int i=0;i<chaine.size();i++){
+			tt[i]=chaine[i];
+
+		}
+		tt[chaine.size()]='\0';
+		/*	tt[0] = '1';
+		tt[1] = '1';
+		tt[2] = '4';
+		tt[3] = '-';
+		tt[4] = 'E';
+		tt[5] = 'P';
+		tt[6] = 'S';
+		tt[7] = 'I';
+		tt[8] = 'H';
+		tt[9] = 'A';
+		tt[10] = 'D';
+		tt[11] = 'O';
+		tt[12] = 'D';
+		tt[13] = 'P';
+		tt[14] = 'Y';
+		tt[15] = ' ';
+		tt[16] = ' ';
+		tt[17] = ' ';
+		tt[18] = '1';
+		tt[19] = '0';
+		tt[20] = '0';
+		tt[21] = '\0';*/
+
+		data = "Coucouc";
+		std::cout << "Sending request..." << std::endl;
+		s.send( tt, static_cast<unsigned short>(strlen(tt)), NO_TIMEOUT );
+
+		// Wait for response
+		std::cout << "Waiting for response..." << std::endl;
+		s.waitForRead( NO_TIMEOUT );
+
+		// Receive whole response
+		data = "";
+		do {
+			memset( buffer, 0, sizeof( buffer ) );
+			std::cout << "Receiving response part..." << std::endl;
+			// When Google has finished sending me its data, it closes the connection ; thus I'm getting an exception but it's okay
+			try {
+				recvCount = s.recv( buffer, sizeof( buffer ), NO_TIMEOUT );
+				data += buffer;
+			}
+			catch (CBrokenSocketException) {
+				std::cout << "Connection closed by remote host..." << std::endl;
+				recvCount = 0;
+			}
+		} while (recvCount > 0);
+		std::cout << "COUCOU:" << data[2] << std::endl;
+		if(data[2]!='5'){
+			config->delServeur(ip);
+
+		}
+
+	}
+	catch(CConnectionException){
+		std::cout << "ECHEC:"<<ip << std::endl;
+		config->delServeur(ip);
+	}
+	catch(CException e){
+		std::cout << "ECHEC:"<<e.getMessage() << std::endl;
+		config->delServeur(ip);
+	}
+	s.uninitEngine();
+	return;
+}
 void testHttpServer() {
 	CSocketIp4 s, *remoteClient = nullptr;
 
@@ -195,14 +375,20 @@ void testHttpServer() {
 
 void testfonction(std::string* ip) {
 	std::cout << "Coucou" << *ip<< std::endl;
+	ConfigurationInterne* config= ConfigurationInterne::getInstance();
+	list<string> serveur=config->getServeurs();
+	for (std::list<string>::iterator it = serveur.begin(); it != serveur.end(); it++){
+		//testexistant(*it) ;
+		VerificationThread(*it);
+			}
 	for (int i = 0; i < 50; i++){
-			std:: string*adressiptemp =new std::string(*ip);
+		std:: string*adressiptemp =new std::string(*ip);
 
-			*adressiptemp=*adressiptemp+std::to_string(i);
-			std::cout << *adressiptemp<< std::endl;
-			//testConnectGoogleAsHttpClient(adressiptemp);
-			DetectionThread(adressiptemp);
-		}	
+		*adressiptemp=*adressiptemp+std::to_string(i);
+		std::cout << *adressiptemp<< std::endl;
+		//testConnectGoogleAsHttpClient(adressiptemp);
+		DetectionThread(adressiptemp);
+	}	
 }
 
 void testSocket() {
@@ -217,7 +403,7 @@ void testSocket() {
 		DetectionMainThread();
 		//testHttpServer();
 		//testConnectGoogleAsHttpClient();
-		
+
 	}
 	//	catch (CBrokenSocketException &e) { }
 	//	catch (CConnectionException &e) { }

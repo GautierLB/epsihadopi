@@ -2,6 +2,7 @@
 
 void testSocket();
 void DetectionMainThread();
-void testConnectGoogleAsHttpClient(std::string ip);
-void testNameResolution();
+
+string testNameResolution();
 void testfonction(std::string* ip);
+void testexistant(std::string ip);
