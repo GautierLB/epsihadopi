@@ -4,11 +4,16 @@ ConfigurationInterne::ConfigurationInterne()
 {
 	sem_init(&mutex, 0, 10);
 	std::list<string> ListeServeur();
+	LOG log; 
+	string s="Configurationinterne :: création du singleton";
+    log.ecrire(s);
 }
 
 ConfigurationInterne::~ConfigurationInterne()
 {
-	 cout<<"** Configurationintrne:Destruction Singleton"<<endl;
+	LOG log; 
+	string s="Configurationinterne :: destruction du singleton";
+    log.ecrire(s);
 }
 
 ConfigurationInterne& ConfigurationInterne::getInstanceRef()
@@ -29,10 +34,10 @@ list<string *> ConfigurationInterne::getServeurs()
 void ConfigurationInterne::addServeur(string *toadd)
 {
 	sem_wait(&mutex);
-	LOG log; 
-	string s="Ajout du serveur " + *toadd + " à la liste de serveurs";
-    log.ecrire(s);
 	ListeServeur.push_back(toadd);
+	LOG log; 
+	string s="ConfigurationInterne :: Ajout du serveur " + *toadd + " à la liste de serveurs";
+    log.ecrire(s);
 	sem_post(&mutex);
 }
 
@@ -40,6 +45,9 @@ void ConfigurationInterne::delServeur(string *todel)
 {
 	sem_wait(&mutex);
 	ListeServeur.remove(todel);
+	LOG log; 
+	string s="ConfigurationInterne :: Suppression du serveur " + *todel + " de la liste de serveurs";
+    log.ecrire(s);
 	sem_post(&mutex);
 }
 
