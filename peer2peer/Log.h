@@ -11,6 +11,7 @@ class LOG
 	public:
 		LOG();
 		string ecrire(const string &s);
+		string ecrire_complexe(const string &s_complexe);
 		~LOG();
 
 	private:
