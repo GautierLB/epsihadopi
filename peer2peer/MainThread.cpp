@@ -16,6 +16,7 @@ void *MainThreadFunc( void *p_arg ) {
 
 void mainThread() {
 	pthread_t t1;
+	//pthread_t t_directory;
 	void *result = nullptr;
 
 	std::cout << std::endl;

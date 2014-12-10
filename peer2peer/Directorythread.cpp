@@ -9,12 +9,14 @@
 unsigned int isDirectory =16384;	//folder
 
 
-void directoryBrowse() {
+void *directoryBrowse() {
 
-	ConfigurationInterne config = ConfigurationInterne::getInstance();
+	//pthread_t t1;
+	ConfigurationInterne config = *ConfigurationInterne::getInstance();
     struct dirent *lecture;
     DIR *rep;
 	const char *path = "C:\\Users\\NEWBIE\\Desktop\\test";
+
     rep = opendir(path);
     while ((lecture = readdir(rep))) 
 	{
@@ -33,16 +35,43 @@ void directoryBrowse() {
 
     }
 	vector<Fichier> ls = config.ListeFichier;
-	for(int i=0;ls.size();i++)
-	{
-		if (i == ls.size())
+	//for(int i=0;ls.size();i++)
+	int i=0;
+	while(i != ls.size())
+	{// faire un while a la place
+
+		
+		/*if (i == ls.size())
 		{
 			break;
-		}
+		}*/
 		std::cout << "liste fichier:" << i << "~" << config.ListeFichier[i].getNomFichier() <<std::endl;
 
 		// ToDo => découper en bloc les fichiers
+		i++;
 	}
 	
     closedir(rep);
+}
+
+void DirectoryThread() {
+	pthread_t t1;
+	
+	void *result = nullptr;
+
+	std::cout << std::endl;
+	std::cout << "--------------------------------------------------" << std::endl;
+
+	std::cout << "** Creating Main thread..." << std::endl;
+	if (pthread_create( &t1, 0, directoryBrowse, () 1 ) != 0) {
+		std::cerr << "** FAIL Creation Main Thread" << std::endl;
+		return;
+	}
+	else {
+		std::cout << "** Main Thread creation OK" << std::endl;
+	}
+
+	std::cout << "** Waiting..." << std::endl;
+	pthread_join( t1, &result );
+	return;
 }
