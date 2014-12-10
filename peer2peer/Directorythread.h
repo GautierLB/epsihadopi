@@ -1,3 +1,1 @@
-#pragma once
-
-void directoryBrowse();
+void directoryThread();

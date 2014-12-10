@@ -76,7 +76,7 @@ int main( int argc, char *argv[] ) {
 
 	//demos( argc, argv );
 
-	directoryBrowse();
+	//directoryBrowse();
 
 	string s = "Initalisation du programme, parametres nombre de connections serveur : " + std::to_string(config.getNbConnectionServeur()) + " ,nombre d'envois simultanes : " + std::to_string(config.getNbEnvoieSimultane()) + " , nombre de receptions simultanees : " + std::to_string(config.getNbReceptionSimultane()); //A remplacer par la ligne à insérer dans le fichier de log
 	LOG affiche; //Variable du type de la classe
@@ -89,6 +89,7 @@ int main( int argc, char *argv[] ) {
 	std::cout << "** Temps entre chaque scan : " << config.getTimeOutScan() <<endl;
 	testSocket();
 	mainThread();
+	
 	std::cout << "** Goodbye" << std::endl;
 	return 0;
 }
