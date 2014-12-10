@@ -27,26 +27,26 @@ ConfigurationInterne* ConfigurationInterne::getInstance()
 	return &interne;
 }
 
-list<string *> ConfigurationInterne::getServeurs()
+list<string> ConfigurationInterne::getServeurs()
 {
 	return ListeServeur;
 }
-void ConfigurationInterne::addServeur(string *toadd)
+void ConfigurationInterne::addServeur(string toadd)
 {
 	sem_wait(&mutex);
 	ListeServeur.push_back(toadd);
 	LOG log; 
-	string s="ConfigurationInterne :: Ajout du serveur " + *toadd + " à la liste de serveurs";
+	string s="ConfigurationInterne :: Ajout du serveur " + toadd + " à la liste de serveurs";
     log.ecrire(s);
 	sem_post(&mutex);
 }
 
-void ConfigurationInterne::delServeur(string *todel)
+void ConfigurationInterne::delServeur(string todel)
 {
 	sem_wait(&mutex);
 	ListeServeur.remove(todel);
 	LOG log; 
-	string s="ConfigurationInterne :: Suppression du serveur " + *todel + " de la liste de serveurs";
+	string s="ConfigurationInterne :: Suppression du serveur " + todel + " de la liste de serveurs";
     log.ecrire(s);
 	sem_post(&mutex);
 }
