@@ -53,7 +53,7 @@ void testConnectGoogleAsHttpClient(std::string ip) {
 	char buffer[ 1024 ];
 	//const char* test=ip->c_str();
 	ConfigurationInterne* config= ConfigurationInterne::getInstance();
-	config->addServeur(&ip);
+	config->addServeur(ip);
 	// Connect to remote host
 	std::cout << std::endl;
 	std::cout << "Connecting to " << ip << std::endl;
