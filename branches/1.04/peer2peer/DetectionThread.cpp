@@ -7,8 +7,6 @@
 void *DetectionThreadFunc(void* ip) {
 	int c;
 	std::string* ipfinal=(std::string*)ip;
-	sem_t smutex;
-	sem_init(&smutex, 0, 10);
 	testConnectGoogleAsHttpClient(*ipfinal);
 	return nullptr;
 }
