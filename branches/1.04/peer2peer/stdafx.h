@@ -16,5 +16,6 @@
 #include <conio.h>
 #include "targetver.h"
 #include "Configuration.h"
+
 #include "Log.h"
 #include "MainThread.h"

@@ -238,6 +238,7 @@
     <ClInclude Include="DemoSha224.h" />
     <ClInclude Include="DemoSocket.h" />
     <ClInclude Include="DemoThreads.h" />
+    <ClInclude Include="DetectionMainThread.h" />
     <ClInclude Include="DetectionThread.h" />
     <ClInclude Include="Directorythread.h" />
     <ClInclude Include="EBlockAvailability.h" />
@@ -248,6 +249,7 @@
     <ClInclude Include="MainThread.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="VerificationThread.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Block.cpp" />
@@ -261,7 +263,7 @@
     <ClCompile Include="DemoSha224.cpp" />
     <ClCompile Include="DemoSocket.cpp" />
     <ClCompile Include="DemoThreads.cpp" />
-    <ClCompile Include="DetectionMaintThread.cpp" />
+    <ClCompile Include="DetectionMainThread.cpp" />
     <ClCompile Include="DetectionThread.cpp" />
     <ClCompile Include="Directorythread.cpp" />
     <ClCompile Include="Log.cpp" />
@@ -269,6 +271,7 @@
     <ClCompile Include="MainThread.cpp" />
     <ClCompile Include="peer2peer.cpp" />
     <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="VerificationThread.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\libs\pthreads\docs\index.html" />

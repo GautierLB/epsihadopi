@@ -239,6 +239,12 @@
     <ClInclude Include="DetectionThread.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="VerificationThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DetectionMainThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -292,10 +298,13 @@
     <ClCompile Include="Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DetectionMaintThread.cpp">
+    <ClCompile Include="DetectionThread.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DetectionThread.cpp">
+    <ClCompile Include="VerificationThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DetectionMainThread.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
