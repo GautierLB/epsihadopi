@@ -18,10 +18,17 @@ Configuration::~Configuration()
 
 }
 
-Configuration& Configuration::getInstance()
+Configuration& Configuration::getInstanceRef()
 {
-    return m_instance;
+	static Configuration m_instance;
+	return m_instance;
 }
+Configuration* Configuration::getInstance()
+{
+	Configuration& config = Configuration::getInstanceRef();
+	return &config;
+}
+
 
 // Setters
 void Configuration::setNbConnectionServeur(int nb)
