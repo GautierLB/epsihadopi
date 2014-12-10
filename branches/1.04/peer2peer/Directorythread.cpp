@@ -6,6 +6,7 @@
 #include <dirent.h>
 #include <CLibSha224.h>
 #include "Directorythread.h"
+#include "CFileText.h"
 
 
 int isDirectory =16384;	//folder
@@ -14,54 +15,58 @@ int isDirectory =16384;	//folder
 void *DirectoryBrowseFunc(void *p_arg)
 {
 
-	//pthread_t t1;
 	ConfigurationInterne config = *ConfigurationInterne::getInstance();
-    struct dirent *lecture;
-    DIR *rep;
+	struct dirent *lecture;
+	DIR *rep;
 	const char *path = ".\\";
+	//const char *path = "C:\\Users\\NEWBIE\\Desktop\\test";
+	LOG log; 
+	rep = opendir(path);
 
-    rep = opendir(path);
-    while ((lecture = readdir(rep))) 
+	while ((lecture = readdir(rep))) 
 	{
-        std::cout<< "nom fichier:  " << lecture->d_name <<std::endl;
 
+		std::vector<std::string> cnt;
+		std::string  pathfile = string(path) + '\\' + lecture->d_name;
+		
+		
 		//we remove the directory + parent.
 		if ( lecture->d_type == isDirectory) 
 		{
+			log.ecrire("DirectoryThread::lecture élément:" + *lecture->d_name  );
 			continue;
 		}
+		log.ecrire("DirectoryThread::lecture élément:" + *lecture->d_name );
 
-		std::string  pathfile = string(path) + '\\' + lecture->d_name;
+		CFileText file = pathfile;
+		
+
+
 		CLibSha224 hash = CLibSha224(pathfile);
 		Fichier f =  Fichier(lecture->d_name, hash.getHash());
 		config.addFichier(f);
 
-    }
+	}
 	vector<Fichier> ls = config.ListeFichier;
-	//for(int i=0;ls.size();i++)
 	unsigned int i=0;
 	while(i != ls.size())
-	{// faire un while a la place
+	{
 
-		
-		/*if (i == ls.size())
-		{
-			break;
-		}*/
-		std::cout << "liste fichier:" << i << "~" << config.ListeFichier[i].getNomFichier() <<std::endl;
+
+		std::cout << "fichier: " << i << " ~ " << config.ListeFichier[i].getNomFichier() <<std::endl;
 
 		// ToDo => découper en bloc les fichiers
 		i++;
 	}
-	
-    closedir(rep);
+
+	closedir(rep);
 	return nullptr;
 }
 
 void directoryThread() 
 {
 	pthread_t t1;
-	
+
 	void *result = nullptr;
 
 	std::cout << std::endl;

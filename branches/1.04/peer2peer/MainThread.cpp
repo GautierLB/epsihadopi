@@ -7,6 +7,7 @@ void *MainThreadFunc( void *p_arg ) {
 	std::cout << "Press Esc to quit.\n";
 	do
     {
+		directoryThread();
 		c = _getch();
     }while (c != 27);
 	return nullptr;
