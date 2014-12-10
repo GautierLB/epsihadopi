@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <semaphore.h> 
 #include "Log.h"
 #include "../libs/core/include/CDateTime.h"
 #include "stdafx.h"
@@ -8,6 +9,7 @@
 using namespace std;
 
 LOG::LOG(){}; //Instanciation du constructeur
+
 
 int CountLines(std::ifstream& File) 
 { 
@@ -21,6 +23,8 @@ int CountLines(std::ifstream& File)
 
 string LOG::ecrire(const string &s)
 {
+	sem_init(&mutex, 0, 10);
+	sem_wait(&mutex);
 	// Ouvre le fichier de données :
 	fstream f("log.txt",ios_base::in | ios_base::out | ios::ate);
 	if (f.is_open())
@@ -51,14 +55,18 @@ string LOG::ecrire(const string &s)
     std::cout << CountLines(File) << std::endl; 
 	
 	return "";
+	sem_post(&mutex);
 }
 
 string LOG::ecrire_complexe(const string &s_complexe)
 {
+	sem_init(&mutex_complexe, 0, 10);
+	sem_wait(&mutex_complexe);
 	// Ouvre le fichier de données :
 	fstream f("log_complexe.txt",ios_base::in | ios_base::out | ios::ate);
 	if (f.is_open())
 	{
+		
 		CDateTime now;
 		now.Now();
 		// Écrit les données :
@@ -85,6 +93,7 @@ string LOG::ecrire_complexe(const string &s_complexe)
     std::cout << CountLines(File) << std::endl; 
 	
 	return "";
+	sem_post(&mutex_complexe);
 }
 
 

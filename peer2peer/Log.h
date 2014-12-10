@@ -11,6 +11,8 @@ class LOG
 	public:
 		LOG();
 		string ecrire(const string &s);
+		sem_t mutex;
+		sem_t mutex_complexe;
 		string ecrire_complexe(const string &s_complexe);
 		~LOG();
 
