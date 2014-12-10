@@ -1,5 +1,4 @@
 #include "ConfigurationInterne.h"
-ConfigurationInterne ConfigurationInterne::m_instance=ConfigurationInterne();
 ConfigurationInterne::ConfigurationInterne()
 {
 	sem_init(&mutex, 0, 10);
