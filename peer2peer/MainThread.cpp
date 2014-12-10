@@ -1,8 +1,5 @@
 #include "stdafx.h"
-#include <iostream>
-#include <pthread.h>
-#include <conio.h>
-#include "MainThread.h"
+
 
 void *MainThreadFunc( void *p_arg ) {
 	int c;

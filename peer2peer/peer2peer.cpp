@@ -41,7 +41,7 @@ void demos( int argc, char *argv[] ) {
 
 int main( int argc, char *argv[] ) {
 
-	Configuration config = Configuration::getInstance();
+	Configuration config = *Configuration::getInstance();
 
 
 	std::cout << "** Welcome to this demo skeleton." << std::endl;

@@ -8,7 +8,7 @@ ConfigurationInterne::ConfigurationInterne()
 
 ConfigurationInterne::~ConfigurationInterne()
 {
-	 cout<<"Creation"<<endl;
+	 cout<<"** Configurationintrne:Destruction Singleton"<<endl;
 }
 
 ConfigurationInterne& ConfigurationInterne::getInstanceRef()
@@ -22,12 +22,24 @@ ConfigurationInterne* ConfigurationInterne::getInstance()
 	return &interne;
 }
 
+list<string *> ConfigurationInterne::getServeurs()
+{
+	return ListeServeur;
+}
 void ConfigurationInterne::addServeur(string *toadd)
 {
 	sem_wait(&mutex);
 	ListeServeur.push_back(toadd);
 	sem_post(&mutex);
 }
+
+void ConfigurationInterne::delServeur(string *todel)
+{
+	sem_wait(&mutex);
+	ListeServeur.remove(todel);
+	sem_post(&mutex);
+}
+
 
 void ConfigurationInterne::addFichier(Fichier f)
 {

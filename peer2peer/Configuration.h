@@ -16,7 +16,8 @@ class Configuration
 		int getTimeOutScan();
 		int getNbEnvoieSimultane();
 		int getNbReceptionSimultane();
-		static Configuration& getInstance();
+		static Configuration* getInstance();
+		static Configuration& getInstanceRef();
 
 	private:
 		Configuration();

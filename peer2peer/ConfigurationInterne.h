@@ -19,6 +19,8 @@ public:
 	static ConfigurationInterne& getInstanceRef();
 	static ConfigurationInterne* getInstance();
 	void ConfigurationInterne::addServeur(string *toadd);
+	void ConfigurationInterne::delServeur(string *todel);
+	list<string *> ConfigurationInterne::getServeurs();
 	void ConfigurationInterne::addFichier(Fichier f);
 	vector<Fichier> ListeFichier;
 	vector<Block *>  ListeBlock;

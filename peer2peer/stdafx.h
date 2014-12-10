@@ -12,6 +12,8 @@
 
 // TODO: reference additional headers your program requires here
 #include <semaphore.h>
+#include <pthread.h>
+#include <conio.h>
 #include "targetver.h"
 #include "Configuration.h"
 #include "Log.h"

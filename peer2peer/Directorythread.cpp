@@ -15,7 +15,7 @@ void *directoryBrowse() {
 	ConfigurationInterne config = *ConfigurationInterne::getInstance();
     struct dirent *lecture;
     DIR *rep;
-	const char *path = "C:\\Users\\NEWBIE\\Desktop\\test";
+	const char *path = ".\\";
 
     rep = opendir(path);
     while ((lecture = readdir(rep))) 
