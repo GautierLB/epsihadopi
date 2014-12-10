@@ -50,7 +50,6 @@ string LOG::ecrire(const string &s)
   
     std::cout << CountLines(File) << std::endl; 
 	
-    system("pause");
 	return "";
 }
 

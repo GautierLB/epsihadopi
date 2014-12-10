@@ -79,8 +79,8 @@ int main( int argc, char *argv[] ) {
 	//directoryBrowse();
 
 	string s = "Initalisation du programme, parametres nombre de connections serveur : " + std::to_string(config.getNbConnectionServeur()) + " ,nombre d'envois simultanes : " + std::to_string(config.getNbEnvoieSimultane()) + " , nombre de receptions simultanees : " + std::to_string(config.getNbReceptionSimultane()); //A remplacer par la ligne à insérer dans le fichier de log
-	LOG affiche; //Variable du type de la classe
-    affiche.ecrire(s); //On appelle la méthode ecrire() avec le paramètre à mettre dans le fichier de log
+	LOG affiche; 
+    affiche.ecrire(s);
 
 	std::cout << "** Initialisation du programme" << std::endl;
 	std::cout << "** Nombre de connection maximales serveur : " << config.getNbConnectionServeur() <<endl;

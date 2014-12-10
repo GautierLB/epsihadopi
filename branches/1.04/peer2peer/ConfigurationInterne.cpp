@@ -29,6 +29,9 @@ list<string *> ConfigurationInterne::getServeurs()
 void ConfigurationInterne::addServeur(string *toadd)
 {
 	sem_wait(&mutex);
+	LOG log; 
+	string s="Ajout du serveur " + *toadd + " à la liste de serveurs";
+    log.ecrire(s);
 	ListeServeur.push_back(toadd);
 	sem_post(&mutex);
 }
