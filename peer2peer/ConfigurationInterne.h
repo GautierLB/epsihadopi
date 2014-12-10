@@ -16,7 +16,8 @@ class ConfigurationInterne
 
 public:
 	~ConfigurationInterne();
-	static ConfigurationInterne& getInstance();
+	static ConfigurationInterne& getInstanceRef();
+	static ConfigurationInterne* getInstance();
 	void ConfigurationInterne::addServeur(string *toadd);
 	void ConfigurationInterne::addFichier(Fichier f);
 	vector<Fichier> ListeFichier;
@@ -27,6 +28,5 @@ private:
 	ConfigurationInterne();
 	sem_t mutex;
 	static ConfigurationInterne m_instance;
-	static ConfigurationInterne configInterne;
 };
 

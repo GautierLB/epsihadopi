@@ -11,7 +11,7 @@
 
 
 // TODO: reference additional headers your program requires here
-
+#include <semaphore.h>
 #include "targetver.h"
 #include "Configuration.h"
 #include "Log.h"
