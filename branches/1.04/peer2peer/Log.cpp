@@ -63,14 +63,14 @@ string LOG::ecrire_complexe(const string &s_complexe)
 		now.Now();
 		// Écrit les données :
 		string chaine;
-		f << now.m_wYear << "-" << now.m_wMonth << "-" << now.m_wDay << " : " << now.m_wHour << "-" << now.m_wMinute << "-" << now.m_wSecond << "-" << now.m_wMilliseconds << " Infos : " << s << endl;
+		f << now.m_wYear << "-" << now.m_wMonth << "-" << now.m_wDay << " : " << now.m_wHour << "-" << now.m_wMinute << "-" << now.m_wSecond << "-" << now.m_wMilliseconds << " Infos : " << s_complexe << endl;
 		// Lit les données :
 		f >> chaine ;
 		_int64 lines = std::count( 
 			std::istreambuf_iterator<char>( f ), 
 			std::istreambuf_iterator<char>(), '\n' );
 		std::cout << lines << std::endl;
-		std::cout << s << std::endl;
+		std::cout << s_complexe << std::endl;
 		// Ferme le fichier :
 		f.close();
 	}
