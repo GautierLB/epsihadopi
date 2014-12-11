@@ -54,7 +54,7 @@ void *DirectoryBrowseFunc(void *p_arg)
 
 
 		std::cout << "fichier: " << i << " ~ " << config.ListeFichier[i].getNomFichier() <<std::endl;
-		CFileBinary fin( config.ListeFichier[i].pathfile());
+		CFileText fin( config.ListeFichier[i].getPathFile());
 		std::cout << "File size is " << fin.getFileSize() << " byte(s)." << std::endl;
 		fin.open( EFileOpenMode::read );
 
