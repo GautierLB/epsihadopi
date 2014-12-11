@@ -7,6 +7,7 @@
 #include <CLibSha224.h>
 #include "Directorythread.h"
 #include "CFileBinary.h"
+#include "CFileText.h"
 
 #include <string>
 #include <iostream>
@@ -15,14 +16,15 @@
 int isDirectory =16384;	//folder
 
 
-void *DirectoryBrowseFunc(void *p_arg)
+void *directoryBrowseFunc(void *p_arg)
 {
 
-	ConfigurationInterne config = *ConfigurationInterne::getInstance();
+	ConfigurationInterne configInt = *ConfigurationInterne::getInstance();
 	struct dirent *lecture;
 	DIR *rep;
 	//const char *path = ".\\";
-	const char *path = "C:\\Users\\quent_000\\Desktop\\test";
+	//const char *path = "C:\\Users\\quent_000\\Desktop\\test";
+	const char *path = "C:\\Users\\NEWBIE\\Desktop\\test";
 	LOG log; 
 	rep = opendir(path);
 
@@ -38,28 +40,22 @@ void *DirectoryBrowseFunc(void *p_arg)
 		{
 			continue;
 		}
-		
-
-		
-		
-
-
 		CLibSha224 hash = CLibSha224(pathfile);
 		Fichier f =  Fichier(lecture->d_name, hash.getHash(),pathfile);
-		config.addFichier(f);
+		configInt.addFichier(f);
 
 	}
 	
 	unsigned int i=0;
 	unsigned char buffer[] = "AZERTYUIOPLLKJHGFDSQX";
 	
-	while(i != config.ListeFichier.size())
+	while(i != configInt.ListeFichier.size())
 	{
 		//std::list<string> blocs = ls[i];
 
-		std::cout << "fichier: " << i << " ~ " << config.ListeFichier[i].getNomFichier() <<std::endl;
-		CFileBinary fin( config.ListeFichier[i].getPathFile());
-		std::cout << "fichier: " << config.ListeFichier[i].getNomFichier() << "~" <<  fin.getFileSize() << " byte(s)." << std::endl;
+		std::cout << "fichier: " << i << " ~ " << configInt.ListeFichier[i].getNomFichier() <<std::endl;
+		CFileBinary fin( configInt.ListeFichier[i].getPathFile());
+		std::cout << "fichier: " << configInt.ListeFichier[i].getNomFichier() << "~" <<  fin.getFileSize() << " byte(s)." << std::endl;
 		fin.open( EFileOpenMode::read );
 		int nbBlock = floor(fin.getFileSize()/20);
 		
@@ -67,15 +63,23 @@ void *DirectoryBrowseFunc(void *p_arg)
 		for(int a = 0;a<nbBlock;a++)
 		{
 		   memset( buffer, 0, sizeof( buffer ) );
-		   unsigned char r = fin.readData( 20, buffer, sizeof( buffer ) ) ;	
-		/*   std::string str( r, r + sizeof r / sizeof r );
-		   config.ListeFichier[i].listeBlocks.push_back(str);*/
+		   fin.readData( 20, buffer, sizeof( buffer ) );
+
+		   std::string temp="";
+		   for(int j=0;j<21;j++){
+			   temp += buffer[j];
+		   }
+		   
+			string ligne="DirectoryThread :: fichier:"+ configInt.ListeFichier[i].getNomFichier() +"->"+"block N'" + std::to_string(a); 
+			log.ecrire(ligne);
+		    configInt.ListeFichier[i].listeBlocks.push_back(temp);
 		}
-		
+	
 		i++;
 	}
 
-
+/* 
+affichage de debug qui liste les bloques
 	
 	i=0;
 	while(i != config.ListeFichier.size())
@@ -84,12 +88,12 @@ void *DirectoryBrowseFunc(void *p_arg)
 		while(a != config.ListeFichier[i].getListeBlocks().size())
 		{
 			std::cout <<   "    block N:"<<  a << " => " <<  config.ListeFichier[i].listeBlocks[a] << std::endl;
-			//std::cout << "block:  " << ls[i].listeBlocks[a] << std::endl;
 			a++;
 		}
+		i++;
 
 	}
-	
+*/
 	closedir(rep);
 	return nullptr;
 }
@@ -104,7 +108,7 @@ void directoryThread()
 	std::cout << "--------------------------------------------------" << std::endl;
 
 	std::cout << "** Creating Directory thread..." << std::endl;
-	if (pthread_create( &t1, 0,DirectoryBrowseFunc,(void *) 1) != 0) 
+	if (pthread_create( &t1, 0,directoryBrowseFunc,(void *) 1) != 0) 
 	{
 		std::cerr << "** FAIL Creation Directory Thread" << std::endl;
 		return;
@@ -117,4 +121,20 @@ void directoryThread()
 	std::cout << "** Waiting..." << std::endl;
 	pthread_join( t1, &result );
 	return;
+}
+
+void compareFile(string p_nom, string p_hash)
+{
+	ConfigurationInterne configInt = *ConfigurationInterne::getInstance();
+	unsigned int i;
+	for (i=0;i<configInt.ListeFichier.size();i++)
+	{
+		if(configInt.ListeFichier[i].getNomFichier() == p_nom)
+		{
+			string p_name = p_nom + "(2)";
+			configInt.ListeFichier[i].setNomFichier(p_name);
+		}
+		
+	}
+
 }
