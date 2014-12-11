@@ -1,4 +1,5 @@
 #include "ConfigurationInterne.h"
+ConfigurationInterne ConfigurationInterne::m_instance=ConfigurationInterne();
 ConfigurationInterne::ConfigurationInterne()
 {
 	sem_init(&mutex, 0, 10);
@@ -17,7 +18,6 @@ ConfigurationInterne::~ConfigurationInterne()
 
 ConfigurationInterne& ConfigurationInterne::getInstanceRef()
 {
-	static ConfigurationInterne m_instance;
 	return m_instance;
 }
 ConfigurationInterne* ConfigurationInterne::getInstance()
@@ -56,4 +56,30 @@ void ConfigurationInterne::addFichier(Fichier f)
 	sem_wait(&mutex);
 	ListeFichier.push_back(f);
 	sem_post(&mutex);
+}
+
+vector<Fichier> ConfigurationInterne::getFichiers()
+{
+	return ListeFichier;
+}
+
+string ConfigurationInterne::getNomFichierId(int idFichier)
+{
+	return ListeFichier[idFichier].getNomFichier();
+}
+
+void ConfigurationInterne::setNomFichierId(int idFichier, string filename)
+{
+	ListeFichier[idFichier].setNomFichier(filename);
+}
+
+
+string ConfigurationInterne::getPathFileId(int idFichier)
+{
+	return ListeFichier[idFichier].getPathFile();
+}
+
+vector<string> ConfigurationInterne::getListeBlockId(int idFichier)
+{
+	return ListeFichier[idFichier].getListeBlocks();
 }

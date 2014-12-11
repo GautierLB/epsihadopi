@@ -24,7 +24,10 @@ void *directoryBrowseFunc(void *p_arg)
 	DIR *rep;
 	//const char *path = ".\\";
 	//const char *path = "C:\\Users\\quent_000\\Desktop\\test";
-	const char *path = "C:\\Users\\Fran\\Desktop\\python";
+	//const char *path = "C:\\Users\\Fran\\Desktop\\python";
+	//const char *path = "C:\\Users\\NEWBIE\\Desktop\\test";
+	const char *path ="C:\\Users\\Gautier\\Desktop\\Nouveau dossier";
+	
 	LOG log; 
 	rep = opendir(path);
 
@@ -49,18 +52,18 @@ void *directoryBrowseFunc(void *p_arg)
 	unsigned int i=0;
 	unsigned char buffer[] = "AZERTYUIOPLLKJHGFDSQX";
 	
-	while(i != configInt.ListeFichier.size())
+	while(i != configInt.getFichiers().size())
 	{
 		//std::list<string> blocs = ls[i];
 
-		std::cout << "fichier: " << i << " ~ " << configInt.ListeFichier[i].getNomFichier() <<std::endl;
-		CFileBinary fin( configInt.ListeFichier[i].getPathFile());
-		std::cout << "fichier: " << configInt.ListeFichier[i].getNomFichier() << "~" <<  fin.getFileSize() << " byte(s)." << std::endl;
+		std::cout << "fichier: " << i << " ~ " << configInt.getNomFichierId(i) <<std::endl;
+		CFileBinary fin( configInt.getPathFileId(i));
+		std::cout << "fichier: " << configInt.getNomFichierId(i) << "~" <<  fin.getFileSize() << " byte(s)." << std::endl;
 		fin.open( EFileOpenMode::read );
 		int nbBlock = floor(fin.getFileSize()/20);
 		
 
-		/*for(int a = 0;a<nbBlock;a++)
+		for(int a = 0;a<nbBlock;a++)
 		{
 		   memset( buffer, 0, sizeof( buffer ) );
 		   fin.readData( 20, buffer, sizeof( buffer ) );
@@ -70,15 +73,14 @@ void *directoryBrowseFunc(void *p_arg)
 			   temp += buffer[j];
 		   }
 		   
-			string ligne="DirectoryThread :: fichier:"+ configInt.ListeFichier[i].getNomFichier() +"->"+"block N'" + std::to_string(a); 
+			string ligne="DirectoryThread :: fichier:"+ configInt.getNomFichierId(i) +"->"+"block N'" + std::to_string(a); 
 			log.ecrire(ligne);
-		    configInt.ListeFichier[i].listeBlocks.push_back(temp);
+		    configInt.getListeBlockId(i).push_back(temp);
 		}
-	*/
 		i++;
 	}
 
-/* 
+/*
 affichage de debug qui liste les bloques
 	
 	i=0;/*
@@ -127,12 +129,12 @@ void compareFile(string p_nom, string p_hash)
 {
 	ConfigurationInterne configInt = *ConfigurationInterne::getInstance();
 	unsigned int i;
-	for (i=0;i<configInt.ListeFichier.size();i++)
+	for (i=0;i<configInt.getFichiers().size();i++)
 	{
-		if(configInt.ListeFichier[i].getNomFichier() == p_nom)
+		if(configInt.getNomFichierId(i) == p_nom)
 		{
 			string p_name = p_nom + "(2)";
-			configInt.ListeFichier[i].setNomFichier(p_name);
+			configInt.setNomFichierId(i,p_name);
 		}
 		
 	}

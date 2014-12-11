@@ -9,10 +9,9 @@
 
 void *MainThreadFunc( void *p_arg ) {
 	int c;
-	
+	ConfigurationInterne* config= ConfigurationInterne::getInstance();
 	std::cout << "Press Esc to quit.\n";
 	directoryThread();
-	ConfigurationInterne* config= ConfigurationInterne::getInstance();
 	DetectionMainThread();
 	LancementServeur();
 	LancementServeurClient();
