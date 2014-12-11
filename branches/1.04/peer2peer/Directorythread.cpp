@@ -6,7 +6,7 @@
 #include <dirent.h>
 #include <CLibSha224.h>
 #include "Directorythread.h"
-#include "CFileText.h"
+#include "CFileBinary.h"
 
 
 int isDirectory =16384;	//folder
@@ -18,8 +18,8 @@ void *DirectoryBrowseFunc(void *p_arg)
 	ConfigurationInterne config = *ConfigurationInterne::getInstance();
 	struct dirent *lecture;
 	DIR *rep;
-	const char *path = ".\\";
-	//const char *path = "C:\\Users\\NEWBIE\\Desktop\\test";
+	//const char *path = ".\\";
+	const char *path = "C:\\Users\\quent_000\\Desktop\\test";
 	LOG log; 
 	rep = opendir(path);
 
@@ -33,10 +33,9 @@ void *DirectoryBrowseFunc(void *p_arg)
 		//we remove the directory + parent.
 		if ( lecture->d_type == isDirectory) 
 		{
-			log.ecrire("DirectoryThread::lecture élément:" + *lecture->d_name  );
 			continue;
 		}
-		log.ecrire("DirectoryThread::lecture élément:" + *lecture->d_name );
+		
 
 		
 		
@@ -49,17 +48,43 @@ void *DirectoryBrowseFunc(void *p_arg)
 	}
 	vector<Fichier> ls = config.ListeFichier;
 	unsigned int i=0;
+	unsigned char buffer[] = "AZERTYUIOPQSDFGHJKLMWXCVBN";
+	
 	while(i != ls.size())
 	{
-
+		//std::list<string> blocs = ls[i];
 
 		std::cout << "fichier: " << i << " ~ " << config.ListeFichier[i].getNomFichier() <<std::endl;
-		CFileText fin( config.ListeFichier[i].getPathFile());
-		std::cout << "File size is " << fin.getFileSize() << " byte(s)." << std::endl;
+		CFileBinary fin( config.ListeFichier[i].getPathFile());
+		std::cout << "fichier: " << config.ListeFichier[i].getNomFichier() << "~" <<  fin.getFileSize() << " byte(s)." << std::endl;
 		fin.open( EFileOpenMode::read );
+		
 
+		for(int a = 0;a<fin.getFileSize()/20 ;a++)
+		{
+			memset( buffer, 0, sizeof( buffer ) );
+			
+
+			std::cout << "Read " << fin.readData( 20, buffer, sizeof( buffer ) ) << " byte(s)." << std::endl;
+			std::cout << "Data: \"" << buffer << "\"" << std::endl;
+			std::string s = to_string(fin.readData( 20, buffer, sizeof( buffer ) ));
+			config.ListeFichier[i].addBlock(s);
+		}
 		// ToDo => découper en bloc les fichiers
 		i++;
+	}
+
+
+	i=0;
+	while(i != ls.size())
+	{
+		int a=0;
+		while(a != ls[i].getListeBlocks().size())
+		{
+			std::cout << "block:  " << ls[i].listeBlocks[a] << std::endl;
+			a++;
+		}
+
 	}
 
 	closedir(rep);
