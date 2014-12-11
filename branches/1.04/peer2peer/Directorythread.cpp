@@ -38,12 +38,12 @@ void *DirectoryBrowseFunc(void *p_arg)
 		}
 		log.ecrire("DirectoryThread::lecture élément:" + *lecture->d_name );
 
-		CFileText file = pathfile;
+		
 		
 
 
 		CLibSha224 hash = CLibSha224(pathfile);
-		Fichier f =  Fichier(lecture->d_name, hash.getHash());
+		Fichier f =  Fichier(lecture->d_name, hash.getHash(),pathfile);
 		config.addFichier(f);
 
 	}
@@ -54,6 +54,9 @@ void *DirectoryBrowseFunc(void *p_arg)
 
 
 		std::cout << "fichier: " << i << " ~ " << config.ListeFichier[i].getNomFichier() <<std::endl;
+		CFileBinary fin( config.ListeFichier[i].pathfile());
+		std::cout << "File size is " << fin.getFileSize() << " byte(s)." << std::endl;
+		fin.open( EFileOpenMode::read );
 
 		// ToDo => découper en bloc les fichiers
 		i++;

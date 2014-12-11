@@ -7,7 +7,7 @@
 void *MainThreadFunc( void *p_arg ) {
 	int c;
 	std::cout << "Press Esc to quit.\n";
-	DetectionMainThread();
+	//DetectionMainThread();
 	do
     {
 		directoryThread();
