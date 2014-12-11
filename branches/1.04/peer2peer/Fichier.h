@@ -10,6 +10,7 @@ class Fichier
 		~Fichier();
 
 		string getNomFichier();
+		string getPathFile();
 	private:
 		string NomFichier;
 		string EmpreinteNumerique;
