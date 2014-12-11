@@ -1,6 +1,9 @@
 #pragma once
 #include <string>
-#include "Block.h"
+#include "stdafx.h"
+#include <list>
+#include <vector>
+
 using namespace std;
 
 class Fichier
@@ -11,10 +14,15 @@ class Fichier
 
 		string getNomFichier();
 		string getPathFile();
+		vector<std::string> getListeBlocks();
+		void addBlock(string s);
+		vector<string> listeBlocks;
+
 	private:
 		string NomFichier;
 		string EmpreinteNumerique;
 		string pathfile;
-		Block TableauBlocks[];
+		
+		
 };
 
