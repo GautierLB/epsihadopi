@@ -110,9 +110,9 @@ void Serveur() {
 		else if(request[2]=='6'){
 			
 			char tt[22];
-		string chaine="117-"+config->ListeFichier.size();
-		if(config->ListeFichier.size()!=0){
-			string nomtemp=config->ListeFichier[0].getNomFichier();
+		string chaine="117-"+config->getFichiers().size();
+		if(config->getFichiers().size()!=0){
+			string nomtemp=config->getNomFichierId(0);
 			
 		chaine+="Coucouc"+nomtemp;
 		}

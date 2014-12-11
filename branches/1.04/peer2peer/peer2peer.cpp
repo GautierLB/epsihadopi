@@ -9,6 +9,7 @@
 #include "DemoDateTime.h"
 #include "DemoSerialize.h"
 #include "Configuration.h"
+#include "ConfigurationInterne.h"
 #include "Directorythread.h"
 
 #include "CProtocolFrame.h"
@@ -42,6 +43,7 @@ void demos( int argc, char *argv[] ) {
 int main( int argc, char *argv[] ) {
 
 	Configuration config = *Configuration::getInstance();
+	ConfigurationInterne configInt = *ConfigurationInterne::getInstance();
 
 	std::cout << "** Welcome to this demo skeleton." << std::endl;
 	int i=0;

@@ -20,9 +20,9 @@ class Fichier
 		void addBlock(string);
 		void compare(string p_nom,string p_hash);
 
-		vector<string> listeBlocks;
 
 	private:
+		vector<string> listeBlocks;
 		string NomFichier;
 		string EmpreinteNumerique;
 		string pathfile;
