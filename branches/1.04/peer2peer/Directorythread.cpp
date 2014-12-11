@@ -24,7 +24,7 @@ void *directoryBrowseFunc(void *p_arg)
 	DIR *rep;
 	//const char *path = ".\\";
 	//const char *path = "C:\\Users\\quent_000\\Desktop\\test";
-	const char *path = "C:\\Users\\NEWBIE\\Desktop\\test";
+	const char *path = "C:\\Users\\Fran\\Desktop\\python";
 	LOG log; 
 	rep = opendir(path);
 
@@ -60,7 +60,7 @@ void *directoryBrowseFunc(void *p_arg)
 		int nbBlock = floor(fin.getFileSize()/20);
 		
 
-		for(int a = 0;a<nbBlock;a++)
+		/*for(int a = 0;a<nbBlock;a++)
 		{
 		   memset( buffer, 0, sizeof( buffer ) );
 		   fin.readData( 20, buffer, sizeof( buffer ) );
@@ -74,14 +74,14 @@ void *directoryBrowseFunc(void *p_arg)
 			log.ecrire(ligne);
 		    configInt.ListeFichier[i].listeBlocks.push_back(temp);
 		}
-	
+	*/
 		i++;
 	}
 
 /* 
 affichage de debug qui liste les bloques
 	
-	i=0;
+	i=0;/*
 	while(i != config.ListeFichier.size())
 	{
 		int a=0;

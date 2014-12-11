@@ -247,7 +247,10 @@
     <ClInclude Include="EMessageSeverity.h" />
     <ClInclude Include="Fichier.h" />
     <ClInclude Include="MainThread.h" />
+    <ClInclude Include="Serveur.h" />
+    <ClInclude Include="ServeurClient.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TabFichierThread.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="VerificationThread.h" />
   </ItemGroup>
@@ -270,7 +273,10 @@
     <ClCompile Include="Fichier.cpp" />
     <ClCompile Include="MainThread.cpp" />
     <ClCompile Include="peer2peer.cpp" />
+    <ClCompile Include="Serveur.cpp" />
+    <ClCompile Include="ServeurClient.cpp" />
     <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="TabFichierThread.cpp" />
     <ClCompile Include="VerificationThread.cpp" />
   </ItemGroup>
   <ItemGroup>

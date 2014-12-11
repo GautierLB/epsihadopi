@@ -1,16 +1,24 @@
 #include "stdafx.h"
 #include "Directorythread.h"
 #include "DetectionMainThread.h"
+#include "ServeurClient.h"
+#include "Serveur.h"
+#include "ConfigurationInterne.h"
 
 
 
 void *MainThreadFunc( void *p_arg ) {
 	int c;
+	
 	std::cout << "Press Esc to quit.\n";
-	//DetectionMainThread();
+	directoryThread();
+	ConfigurationInterne* config= ConfigurationInterne::getInstance();
+	DetectionMainThread();
+	LancementServeur();
+	LancementServeurClient();
 	do
     {
-		directoryThread();
+		
 		c = _getch();
     }while (c != 27);
 	return nullptr;

@@ -362,7 +362,7 @@ void testHttpServer() {
 		tt[5] = 'U';
 		tt[6] = 'R';
 		tt[7] = '\0';
-		remoteClient->send( tt, static_cast<unsigned short>(data.length()), NO_TIMEOUT );
+		remoteClient->send( tt, static_cast<unsigned short>(strlen(tt)), NO_TIMEOUT );
 
 		// Disconnect
 		remoteClient->shutdown();
