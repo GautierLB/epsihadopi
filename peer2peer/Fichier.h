@@ -13,11 +13,12 @@ class Fichier
 		~Fichier();
 
 		string getNomFichier();
+		void setNomFichier(string p_name);
 		string getPathFile();
 		string getEmpreinteNumerique();
 		vector<string> getListeBlocks();
 		void addBlock(string);
-
+		void compare(string p_nom,string p_hash);
 
 		vector<string> listeBlocks;
 
