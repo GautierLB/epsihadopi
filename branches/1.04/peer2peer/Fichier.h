@@ -14,8 +14,11 @@ class Fichier
 
 		string getNomFichier();
 		string getPathFile();
-		vector<std::string> getListeBlocks();
-		void addBlock(string s);
+		string getEmpreinteNumerique();
+		vector<string> getListeBlocks();
+		void addBlock(string);
+
+
 		vector<string> listeBlocks;
 
 	private:

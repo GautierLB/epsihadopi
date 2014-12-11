@@ -8,6 +8,9 @@
 #include "Directorythread.h"
 #include "CFileBinary.h"
 
+#include <string>
+#include <iostream>
+#include <ostream>
 
 int isDirectory =16384;	//folder
 
@@ -46,11 +49,11 @@ void *DirectoryBrowseFunc(void *p_arg)
 		config.addFichier(f);
 
 	}
-	vector<Fichier> ls = config.ListeFichier;
-	unsigned int i=0;
-	unsigned char buffer[] = "AZERTYUIOPQSDFGHJKLMWXCVBN";
 	
-	while(i != ls.size())
+	unsigned int i=0;
+	unsigned char buffer[] = "AZERTYUIOPLLKJHGFDSQX";
+	
+	while(i != config.ListeFichier.size())
 	{
 		//std::list<string> blocs = ls[i];
 
@@ -58,35 +61,35 @@ void *DirectoryBrowseFunc(void *p_arg)
 		CFileBinary fin( config.ListeFichier[i].getPathFile());
 		std::cout << "fichier: " << config.ListeFichier[i].getNomFichier() << "~" <<  fin.getFileSize() << " byte(s)." << std::endl;
 		fin.open( EFileOpenMode::read );
+		int nbBlock = floor(fin.getFileSize()/20);
 		
 
-		for(int a = 0;a<fin.getFileSize()/20 ;a++)
+		for(int a = 0;a<nbBlock;a++)
 		{
-			memset( buffer, 0, sizeof( buffer ) );
-			
-
-			std::cout << "Read " << fin.readData( 20, buffer, sizeof( buffer ) ) << " byte(s)." << std::endl;
-			std::cout << "Data: \"" << buffer << "\"" << std::endl;
-			std::string s = to_string(fin.readData( 20, buffer, sizeof( buffer ) ));
-			config.ListeFichier[i].addBlock(s);
+		   memset( buffer, 0, sizeof( buffer ) );
+		   unsigned char r = fin.readData( 20, buffer, sizeof( buffer ) ) ;	
+		/*   std::string str( r, r + sizeof r / sizeof r );
+		   config.ListeFichier[i].listeBlocks.push_back(str);*/
 		}
-		// ToDo => découper en bloc les fichiers
+		
 		i++;
 	}
 
 
+	
 	i=0;
-	while(i != ls.size())
+	while(i != config.ListeFichier.size())
 	{
 		int a=0;
-		while(a != ls[i].getListeBlocks().size())
+		while(a != config.ListeFichier[i].getListeBlocks().size())
 		{
-			std::cout << "block:  " << ls[i].listeBlocks[a] << std::endl;
+			std::cout <<   "    block N:"<<  a << " => " <<  config.ListeFichier[i].listeBlocks[a] << std::endl;
+			//std::cout << "block:  " << ls[i].listeBlocks[a] << std::endl;
 			a++;
 		}
 
 	}
-
+	
 	closedir(rep);
 	return nullptr;
 }

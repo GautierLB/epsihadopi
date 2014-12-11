@@ -23,13 +23,19 @@ std::string Fichier::getPathFile()
 {
 	return pathfile;
 }
+std::string Fichier::getEmpreinteNumerique()
+{
+	return EmpreinteNumerique;
+}
+
+
 vector<string>Fichier::getListeBlocks()
 {
 	return listeBlocks;
 }
 
 
-void Fichier::addBlock(std::string s)
+void Fichier::addBlock(string s)
 {
 	
 	listeBlocks.push_back(s);
