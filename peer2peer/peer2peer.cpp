@@ -27,7 +27,7 @@ void demos( int argc, char *argv[] ) {
 	//
 	// Test libraries
 	std::cout << std::endl;
-	testThreads();
+	//testThreads();
 	//testException();
 	//testSha224();
 	//testSocket();

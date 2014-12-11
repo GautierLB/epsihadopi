@@ -245,6 +245,15 @@
     <ClInclude Include="DetectionMainThread.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Serveur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ServeurClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TabFichierThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -305,6 +314,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DetectionMainThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Serveur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ServeurClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TabFichierThread.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

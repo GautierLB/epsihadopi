@@ -1,0 +1,823 @@
+2014-12-11 : 17-48-26-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 17-48-26-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 17-48-26-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 17-48-26-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 17-48-26-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 17-48-44-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 17-48-44-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 17-48-44-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 17-48-44-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 17-48-44-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 17-49-7-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 17-49-7-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 17-49-7-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 17-49-7-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 17-49-10-0 Infos : Configuration :: Destruction du singleton
+2014-12-11 : 17-49-10-0 Infos : Configuration :: Destruction du singleton
+2014-12-11 : 17-49-18-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 17-49-18-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 17-49-18-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 17-49-18-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 17-49-18-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 17-50-21-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 17-50-21-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 17-50-21-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 17-50-21-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 17-50-21-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 17-50-40-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 17-50-40-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 17-50-40-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 17-50-40-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 17-50-40-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 17-51-46-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 17-51-46-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 17-51-46-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 17-51-46-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 17-51-46-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 17-52-37-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 17-52-37-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 17-52-37-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 17-52-37-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 17-52-37-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 17-54-56-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 17-54-56-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 17-54-56-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 17-54-56-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 17-54-56-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 17-56-0-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 17-56-0-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 17-56-0-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 17-56-0-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 17-56-0-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 17-56-58-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 17-56-58-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 17-56-58-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 17-56-58-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 17-56-58-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 17-57-17-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 17-57-17-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 17-57-18-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 17-57-18-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 17-57-18-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 17-58-47-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 17-58-47-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 17-58-47-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 17-58-47-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 17-58-47-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 17-59-49-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 17-59-49-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 17-59-49-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 17-59-49-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 17-59-49-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 18-0-16-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 18-0-16-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 18-0-16-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 18-0-16-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 18-0-16-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 18-1-2-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 18-1-2-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 18-1-2-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 18-1-2-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 18-1-2-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 18-1-2-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 18-2-14-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 18-2-14-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 18-2-14-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 18-2-14-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 18-2-14-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 18-2-14-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 18-46-8-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 18-46-8-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 18-46-8-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 18-46-8-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 18-46-8-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 18-46-8-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 18-57-59-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 18-57-59-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 18-57-59-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 18-57-59-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 18-57-59-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 18-57-59-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 18-58-0-0 Infos : Configuration :: Destruction du singleton
+2014-12-11 : 18-58-1-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 18-58-1-0 Infos : Configuration :: Destruction du singleton
+2014-12-11 : 21-14-22-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 21-14-22-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 21-14-22-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 21-14-22-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 21-14-22-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 21-14-22-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 21-15-16-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 21-15-16-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 21-15-16-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 21-15-16-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 21-15-16-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 21-15-16-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 21-15-16-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.1 à la liste de serveurs
+2014-12-11 : 21-15-16-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.2 à la liste de serveurs
+2014-12-11 : 21-15-16-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.3 à la liste de serveurs
+2014-12-11 : 21-15-16-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.4 à la liste de serveurs
+2014-12-11 : 21-15-17-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.5 à la liste de serveurs
+2014-12-11 : 21-15-17-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.6 à la liste de serveurs
+2014-12-11 : 21-15-17-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.7 à la liste de serveurs
+2014-12-11 : 21-15-18-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.31 à la liste de serveurs
+2014-12-11 : 21-16-31-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 21-16-31-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 21-16-31-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 21-16-31-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 21-16-31-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 21-16-31-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 21-16-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.1 à la liste de serveurs
+2014-12-11 : 21-16-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.2 à la liste de serveurs
+2014-12-11 : 21-16-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.3 à la liste de serveurs
+2014-12-11 : 21-16-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.4 à la liste de serveurs
+2014-12-11 : 21-16-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.5 à la liste de serveurs
+2014-12-11 : 21-16-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.6 à la liste de serveurs
+2014-12-11 : 21-16-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.8 à la liste de serveurs
+2014-12-11 : 21-16-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.19 à la liste de serveurs
+2014-12-11 : 21-16-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.30 à la liste de serveurs
+2014-12-11 : 21-16-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.42 à la liste de serveurs
+2014-12-11 : 21-16-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.9 à la liste de serveurs
+2014-12-11 : 21-16-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.18 à la liste de serveurs
+2014-12-11 : 21-16-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.29 à la liste de serveurs
+2014-12-11 : 21-16-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.41 à la liste de serveurs
+2014-12-11 : 21-16-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.10 à la liste de serveurs
+2014-12-11 : 21-16-34-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.21 à la liste de serveurs
+2014-12-11 : 21-16-34-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.31 à la liste de serveurs
+2014-12-11 : 21-16-34-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.43 à la liste de serveurs
+2014-12-11 : 21-16-56-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.8 à la liste de serveurs
+2014-12-11 : 21-16-56-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.22 à la liste de serveurs
+2014-12-11 : 21-16-56-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.35 à la liste de serveurs
+2014-12-11 : 21-16-56-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.47 à la liste de serveurs
+2014-12-11 : 21-17-2-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.41 de la liste de serveurs
+2014-12-11 : 21-17-2-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.43 de la liste de serveurs
+2014-12-11 : 21-17-2-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.29 de la liste de serveurs
+2014-12-11 : 21-17-2-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.31 de la liste de serveurs
+2014-12-11 : 21-17-2-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.42 de la liste de serveurs
+2014-12-11 : 21-17-2-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.10 de la liste de serveurs
+2014-12-11 : 21-17-2-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.8 de la liste de serveurs
+2014-12-11 : 21-17-2-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.30 de la liste de serveurs
+2014-12-11 : 21-17-2-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.19 de la liste de serveurs
+2014-12-11 : 21-17-2-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.21 de la liste de serveurs
+2014-12-11 : 21-17-2-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.7 à la liste de serveurs
+2014-12-11 : 21-17-3-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.20 à la liste de serveurs
+2014-12-11 : 21-17-3-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.36 à la liste de serveurs
+2014-12-11 : 21-17-3-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.9 à la liste de serveurs
+2014-12-11 : 21-17-3-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.23 à la liste de serveurs
+2014-12-11 : 21-23-7-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 21-23-7-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 21-23-7-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 21-23-7-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 21-23-7-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 21-23-7-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 21-23-8-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.2 à la liste de serveurs
+2014-12-11 : 21-23-8-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.3 à la liste de serveurs
+2014-12-11 : 21-23-8-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.4 à la liste de serveurs
+2014-12-11 : 21-23-8-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.5 à la liste de serveurs
+2014-12-11 : 21-23-8-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.6 à la liste de serveurs
+2014-12-11 : 21-23-8-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.7 à la liste de serveurs
+2014-12-11 : 21-23-8-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.8 à la liste de serveurs
+2014-12-11 : 21-23-9-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.16 à la liste de serveurs
+2014-12-11 : 21-23-9-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.28 à la liste de serveurs
+2014-12-11 : 21-23-9-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.40 à la liste de serveurs
+2014-12-11 : 21-23-9-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.9 à la liste de serveurs
+2014-12-11 : 21-23-9-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.17 à la liste de serveurs
+2014-12-11 : 21-23-9-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.29 à la liste de serveurs
+2014-12-11 : 21-23-9-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.42 à la liste de serveurs
+2014-12-11 : 21-23-9-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.13 à la liste de serveurs
+2014-12-11 : 21-23-10-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.22 à la liste de serveurs
+2014-12-11 : 21-23-10-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.33 à la liste de serveurs
+2014-12-11 : 21-23-10-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.45 à la liste de serveurs
+2014-12-11 : 21-23-47-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 21-23-47-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 21-23-47-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 21-23-47-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 21-23-47-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 21-23-47-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 21-23-47-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.10 à la liste de serveurs
+2014-12-11 : 21-23-47-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.11 à la liste de serveurs
+2014-12-11 : 21-23-47-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.12 à la liste de serveurs
+2014-12-11 : 21-23-48-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.13 à la liste de serveurs
+2014-12-11 : 21-23-48-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.14 à la liste de serveurs
+2014-12-11 : 21-23-48-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.15 à la liste de serveurs
+2014-12-11 : 21-23-48-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.17 à la liste de serveurs
+2014-12-11 : 21-23-48-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.27 à la liste de serveurs
+2014-12-11 : 21-23-48-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.39 à la liste de serveurs
+2014-12-11 : 21-23-48-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.16 à la liste de serveurs
+2014-12-11 : 21-23-48-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.18 à la liste de serveurs
+2014-12-11 : 21-23-49-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.28 à la liste de serveurs
+2014-12-11 : 21-23-58-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.38 à la liste de serveurs
+2014-12-11 : 21-23-58-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.49 à la liste de serveurs
+2014-12-11 : 21-23-59-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.20 à la liste de serveurs
+2014-12-11 : 21-23-59-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.25 à la liste de serveurs
+2014-12-11 : 21-23-59-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.35 à la liste de serveurs
+2014-12-11 : 21-24-11-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.3 à la liste de serveurs
+2014-12-11 : 21-24-11-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.17 à la liste de serveurs
+2014-12-11 : 21-24-11-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.30 à la liste de serveurs
+2014-12-11 : 21-24-11-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.4 à la liste de serveurs
+2014-12-11 : 21-24-11-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.16 à la liste de serveurs
+2014-12-11 : 21-24-11-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.29 à la liste de serveurs
+2014-12-11 : 21-24-12-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.2 à la liste de serveurs
+2014-12-11 : 21-24-12-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.18 à la liste de serveurs
+2014-12-11 : 21-24-12-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.31 à la liste de serveurs
+2014-12-11 : 21-24-12-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.42 à la liste de serveurs
+2014-12-11 : 21-24-30-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.16 de la liste de serveurs
+2014-12-11 : 21-24-30-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.28 de la liste de serveurs
+2014-12-11 : 21-24-30-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.35 de la liste de serveurs
+2014-12-11 : 21-24-30-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.18 de la liste de serveurs
+2014-12-11 : 21-24-30-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.25 de la liste de serveurs
+2014-12-11 : 21-24-30-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.38 de la liste de serveurs
+2014-12-11 : 21-24-30-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.20 de la liste de serveurs
+2014-12-11 : 21-24-30-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.49 de la liste de serveurs
+2014-12-11 : 21-24-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.11 à la liste de serveurs
+2014-12-11 : 21-24-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.23 à la liste de serveurs
+2014-12-11 : 21-24-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.35 à la liste de serveurs
+2014-12-11 : 21-24-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.48 à la liste de serveurs
+2014-12-11 : 21-24-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.10 à la liste de serveurs
+2014-12-11 : 21-24-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.26 à la liste de serveurs
+2014-12-11 : 21-24-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.6 à la liste de serveurs
+2014-12-11 : 21-24-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.22 à la liste de serveurs
+2014-12-11 : 21-24-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.32 à la liste de serveurs
+2014-12-11 : 21-24-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.44 à la liste de serveurs
+2014-12-11 : 21-24-33-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.27 de la liste de serveurs
+2014-12-11 : 21-24-33-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.30 de la liste de serveurs
+2014-12-11 : 21-24-33-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.39 de la liste de serveurs
+2014-12-11 : 21-24-33-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.17 de la liste de serveurs
+2014-12-11 : 21-24-33-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.3 de la liste de serveurs
+2014-12-11 : 21-24-33-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.2 de la liste de serveurs
+2014-12-11 : 21-24-33-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.29 de la liste de serveurs
+2014-12-11 : 21-24-33-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.42 de la liste de serveurs
+2014-12-11 : 21-25-6-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.1 à la liste de serveurs
+2014-12-11 : 21-25-6-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.15 à la liste de serveurs
+2014-12-11 : 21-29-31-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 21-29-31-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 21-29-31-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 21-29-31-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 21-29-31-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 21-29-31-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 21-29-31-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.10 à la liste de serveurs
+2014-12-11 : 21-29-31-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.11 à la liste de serveurs
+2014-12-11 : 21-29-31-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.12 à la liste de serveurs
+2014-12-11 : 21-29-31-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.13 à la liste de serveurs
+2014-12-11 : 21-29-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.14 à la liste de serveurs
+2014-12-11 : 21-29-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.15 à la liste de serveurs
+2014-12-11 : 21-29-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.17 à la liste de serveurs
+2014-12-11 : 21-29-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.29 à la liste de serveurs
+2014-12-11 : 21-29-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.1 à la liste de serveurs
+2014-12-11 : 21-29-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.16 à la liste de serveurs
+2014-12-11 : 21-29-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.18 à la liste de serveurs
+2014-12-11 : 21-29-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.34 à la liste de serveurs
+2014-12-11 : 21-29-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.8 à la liste de serveurs
+2014-12-11 : 21-29-49-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.19 à la liste de serveurs
+2014-12-11 : 21-29-50-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.30 à la liste de serveurs
+2014-12-11 : 21-29-50-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.43 à la liste de serveurs
+2014-12-11 : 21-29-53-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.9 à la liste de serveurs
+2014-12-11 : 21-29-53-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.22 à la liste de serveurs
+2014-12-11 : 21-29-57-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.36 à la liste de serveurs
+2014-12-11 : 21-29-57-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.1 de la liste de serveurs
+2014-12-11 : 21-29-57-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.30 de la liste de serveurs
+2014-12-11 : 21-29-57-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.43 de la liste de serveurs
+2014-12-11 : 21-29-57-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.16 de la liste de serveurs
+2014-12-11 : 21-29-57-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.19 de la liste de serveurs
+2014-12-11 : 21-29-57-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.18 de la liste de serveurs
+2014-12-11 : 21-29-57-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.34 de la liste de serveurs
+2014-12-11 : 21-29-57-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.17 de la liste de serveurs
+2014-12-11 : 21-29-57-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.29 de la liste de serveurs
+2014-12-11 : 21-29-57-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.49 à la liste de serveurs
+2014-12-11 : 21-29-57-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.10 à la liste de serveurs
+2014-12-11 : 21-29-58-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.23 à la liste de serveurs
+2014-12-11 : 21-29-58-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.38 à la liste de serveurs
+2014-12-11 : 21-29-58-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.2 à la liste de serveurs
+2014-12-11 : 21-29-58-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.19 à la liste de serveurs
+2014-12-11 : 21-30-26-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 21-30-26-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 21-30-26-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 21-30-26-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 21-30-26-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 21-30-26-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 21-30-26-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.1 à la liste de serveurs
+2014-12-11 : 21-30-26-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.2 à la liste de serveurs
+2014-12-11 : 21-30-27-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.3 à la liste de serveurs
+2014-12-11 : 21-30-27-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.4 à la liste de serveurs
+2014-12-11 : 21-30-27-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.5 à la liste de serveurs
+2014-12-11 : 21-30-27-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.6 à la liste de serveurs
+2014-12-11 : 21-30-27-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.7 à la liste de serveurs
+2014-12-11 : 21-30-27-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.17 à la liste de serveurs
+2014-12-11 : 21-30-35-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.29 à la liste de serveurs
+2014-12-11 : 21-30-35-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.42 à la liste de serveurs
+2014-12-11 : 21-30-35-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.8 à la liste de serveurs
+2014-12-11 : 21-30-35-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.19 à la liste de serveurs
+2014-12-11 : 21-30-35-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.30 à la liste de serveurs
+2014-12-11 : 21-30-35-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.9 à la liste de serveurs
+2014-12-11 : 21-30-53-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.8 de la liste de serveurs
+2014-12-11 : 21-30-53-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.17 de la liste de serveurs
+2014-12-11 : 21-30-53-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.19 de la liste de serveurs
+2014-12-11 : 21-30-53-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.42 de la liste de serveurs
+2014-12-11 : 21-30-53-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.4 à la liste de serveurs
+2014-12-11 : 21-30-53-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.9 à la liste de serveurs
+2014-12-11 : 21-30-53-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.22 à la liste de serveurs
+2014-12-11 : 21-30-54-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.49 à la liste de serveurs
+2014-12-11 : 21-30-54-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.48 à la liste de serveurs
+2014-12-11 : 21-32-31-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 21-32-31-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 21-32-31-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 21-32-31-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 21-32-31-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 21-32-31-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 21-32-31-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.1 à la liste de serveurs
+2014-12-11 : 21-32-31-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.2 à la liste de serveurs
+2014-12-11 : 21-32-31-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.3 à la liste de serveurs
+2014-12-11 : 21-32-31-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.4 à la liste de serveurs
+2014-12-11 : 21-32-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.5 à la liste de serveurs
+2014-12-11 : 21-32-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.6 à la liste de serveurs
+2014-12-11 : 21-32-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.8 à la liste de serveurs
+2014-12-11 : 21-32-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.17 à la liste de serveurs
+2014-12-11 : 21-32-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.30 à la liste de serveurs
+2014-12-11 : 21-32-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.41 à la liste de serveurs
+2014-12-11 : 21-32-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.9 à la liste de serveurs
+2014-12-11 : 21-32-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.19 à la liste de serveurs
+2014-12-11 : 21-32-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.31 à la liste de serveurs
+2014-12-11 : 21-32-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.44 à la liste de serveurs
+2014-12-11 : 21-32-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.13 à la liste de serveurs
+2014-12-11 : 21-32-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.21 à la liste de serveurs
+2014-12-11 : 21-32-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.36 à la liste de serveurs
+2014-12-11 : 21-32-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.48 à la liste de serveurs
+2014-12-11 : 21-32-55-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.4 à la liste de serveurs
+2014-12-11 : 21-32-55-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.16 à la liste de serveurs
+2014-12-11 : 21-32-55-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.28 à la liste de serveurs
+2014-12-11 : 21-32-55-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.2 à la liste de serveurs
+2014-12-11 : 21-33-46-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 21-33-46-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 21-33-46-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 21-33-49-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 21-33-49-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 21-33-49-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 21-33-52-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.1 à la liste de serveurs
+2014-12-11 : 21-33-52-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.2 à la liste de serveurs
+2014-12-11 : 21-33-52-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.3 à la liste de serveurs
+2014-12-11 : 21-33-53-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.4 à la liste de serveurs
+2014-12-11 : 21-33-53-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.5 à la liste de serveurs
+2014-12-11 : 21-33-53-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.6 à la liste de serveurs
+2014-12-11 : 21-33-53-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.8 à la liste de serveurs
+2014-12-11 : 21-33-53-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.16 à la liste de serveurs
+2014-12-11 : 21-33-53-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.26 à la liste de serveurs
+2014-12-11 : 21-33-53-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.38 à la liste de serveurs
+2014-12-11 : 21-33-53-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.10 à la liste de serveurs
+2014-12-11 : 21-33-54-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.15 à la liste de serveurs
+2014-12-11 : 21-33-54-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.27 à la liste de serveurs
+2014-12-11 : 21-33-54-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.39 à la liste de serveurs
+2014-12-11 : 21-33-54-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.9 à la liste de serveurs
+2014-12-11 : 21-33-54-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.17 à la liste de serveurs
+2014-12-11 : 21-33-54-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.29 à la liste de serveurs
+2014-12-11 : 21-33-54-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.47 à la liste de serveurs
+2014-12-11 : 21-38-20-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 21-38-20-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 21-38-20-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 21-38-20-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 21-38-20-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 21-38-20-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 21-38-20-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.1 à la liste de serveurs
+2014-12-11 : 21-38-21-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.2 à la liste de serveurs
+2014-12-11 : 21-38-21-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.3 à la liste de serveurs
+2014-12-11 : 21-38-21-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.4 à la liste de serveurs
+2014-12-11 : 21-38-21-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.5 à la liste de serveurs
+2014-12-11 : 21-38-21-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.6 à la liste de serveurs
+2014-12-11 : 21-38-21-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.7 à la liste de serveurs
+2014-12-11 : 21-38-21-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.18 à la liste de serveurs
+2014-12-11 : 21-38-22-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.25 à la liste de serveurs
+2014-12-11 : 21-38-22-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.41 à la liste de serveurs
+2014-12-11 : 21-38-56-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.49 à la liste de serveurs
+2014-12-11 : 21-40-10-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 21-40-10-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 21-40-10-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 21-40-10-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 21-40-11-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 21-40-11-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 21-40-11-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.1 à la liste de serveurs
+2014-12-11 : 21-40-11-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.2 à la liste de serveurs
+2014-12-11 : 21-40-11-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.3 à la liste de serveurs
+2014-12-11 : 21-40-11-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.4 à la liste de serveurs
+2014-12-11 : 21-40-11-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.5 à la liste de serveurs
+2014-12-11 : 21-40-12-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.6 à la liste de serveurs
+2014-12-11 : 21-40-12-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.7 à la liste de serveurs
+2014-12-11 : 21-40-12-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.11 à la liste de serveurs
+2014-12-11 : 21-40-12-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.19 à la liste de serveurs
+2014-12-11 : 21-40-12-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.26 à la liste de serveurs
+2014-12-11 : 21-40-12-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.34 à la liste de serveurs
+2014-12-11 : 21-40-12-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.13 à la liste de serveurs
+2014-12-11 : 21-40-12-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.20 à la liste de serveurs
+2014-12-11 : 21-40-13-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.15 à la liste de serveurs
+2014-12-11 : 21-40-45-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.5 à la liste de serveurs
+2014-12-11 : 21-40-58-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.15 de la liste de serveurs
+2014-12-11 : 21-40-58-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.11 de la liste de serveurs
+2014-12-11 : 21-40-58-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.34 de la liste de serveurs
+2014-12-11 : 21-40-58-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.7 de la liste de serveurs
+2014-12-11 : 21-40-58-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.4 de la liste de serveurs
+2014-12-11 : 21-40-58-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.6 de la liste de serveurs
+2014-12-11 : 21-40-58-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.19 de la liste de serveurs
+2014-12-11 : 21-40-58-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.26 de la liste de serveurs
+2014-12-11 : 21-40-58-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.5 de la liste de serveurs
+2014-12-11 : 21-40-58-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.2 de la liste de serveurs
+2014-12-11 : 21-40-58-0 Infos : ConfigurationInterne :: Suppression du serveur 127.0.0.3 de la liste de serveurs
+2014-12-11 : 21-40-58-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.12 à la liste de serveurs
+2014-12-11 : 21-40-59-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.15 à la liste de serveurs
+2014-12-11 : 21-40-59-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.23 à la liste de serveurs
+2014-12-11 : 21-42-26-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 21-42-26-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 21-42-26-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 21-42-26-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 21-42-26-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 21-42-26-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 21-42-27-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.7 à la liste de serveurs
+2014-12-11 : 21-42-27-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.8 à la liste de serveurs
+2014-12-11 : 21-42-27-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.9 à la liste de serveurs
+2014-12-11 : 21-42-27-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.10 à la liste de serveurs
+2014-12-11 : 21-42-27-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.11 à la liste de serveurs
+2014-12-11 : 21-42-27-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.12 à la liste de serveurs
+2014-12-11 : 21-42-27-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.14 à la liste de serveurs
+2014-12-11 : 21-42-35-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.2 à la liste de serveurs
+2014-12-11 : 21-42-35-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.34 à la liste de serveurs
+2014-12-11 : 21-42-36-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.42 à la liste de serveurs
+2014-12-11 : 21-42-36-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.21 à la liste de serveurs
+2014-12-11 : 21-42-36-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.3 à la liste de serveurs
+2014-12-11 : 21-43-17-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 21-43-17-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 21-43-17-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 21-43-17-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 21-43-17-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 21-43-17-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 21-43-17-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.1 à la liste de serveurs
+2014-12-11 : 21-43-18-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.2 à la liste de serveurs
+2014-12-11 : 21-43-18-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.3 à la liste de serveurs
+2014-12-11 : 21-43-18-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.4 à la liste de serveurs
+2014-12-11 : 21-43-18-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.5 à la liste de serveurs
+2014-12-11 : 21-43-18-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.6 à la liste de serveurs
+2014-12-11 : 21-44-1-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 21-44-1-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 21-44-1-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 21-44-1-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 21-44-2-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 21-44-2-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 21-44-2-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.1 à la liste de serveurs
+2014-12-11 : 21-44-2-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.2 à la liste de serveurs
+2014-12-11 : 21-44-2-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.3 à la liste de serveurs
+2014-12-11 : 21-44-2-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.4 à la liste de serveurs
+2014-12-11 : 21-44-2-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.5 à la liste de serveurs
+2014-12-11 : 21-44-3-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.6 à la liste de serveurs
+2014-12-11 : 21-44-8-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.13 à la liste de serveurs
+2014-12-11 : 21-47-32-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 21-47-32-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 21-47-32-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 21-47-32-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 21-47-32-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 21-47-32-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 21-49-10-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 21-49-10-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 21-49-10-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 21-49-10-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 21-49-10-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 21-49-11-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 21-49-11-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.1 à la liste de serveurs
+2014-12-11 : 21-49-11-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.2 à la liste de serveurs
+2014-12-11 : 21-49-11-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.3 à la liste de serveurs
+2014-12-11 : 21-49-11-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.4 à la liste de serveurs
+2014-12-11 : 21-49-11-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.5 à la liste de serveurs
+2014-12-11 : 21-49-12-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.6 à la liste de serveurs
+2014-12-11 : 21-49-12-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.7 à la liste de serveurs
+2014-12-11 : 21-49-16-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.18 à la liste de serveurs
+2014-12-11 : 21-49-17-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.24 à la liste de serveurs
+2014-12-11 : 21-49-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.14 à la liste de serveurs
+2014-12-11 : 22-12-56-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 22-12-56-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 22-12-56-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 22-12-56-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 22-12-56-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 22-12-56-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 22-12-56-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.1 à la liste de serveurs
+2014-12-11 : 22-12-56-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.2 à la liste de serveurs
+2014-12-11 : 22-12-56-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.3 à la liste de serveurs
+2014-12-11 : 22-12-57-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.4 à la liste de serveurs
+2014-12-11 : 22-12-57-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.5 à la liste de serveurs
+2014-12-11 : 22-12-57-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.21 à la liste de serveurs
+2014-12-11 : 22-12-58-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.9 à la liste de serveurs
+2014-12-11 : 22-12-58-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.23 à la liste de serveurs
+2014-12-11 : 22-13-12-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.6 à la liste de serveurs
+2014-12-11 : 22-13-13-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.22 à la liste de serveurs
+2014-12-11 : 22-13-16-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.30 à la liste de serveurs
+2014-12-11 : 22-13-17-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.37 à la liste de serveurs
+2014-12-11 : 22-14-14-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 22-14-14-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 22-14-14-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 22-14-14-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 22-14-14-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 22-14-15-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 22-20-52-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 22-20-53-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 22-20-53-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 22-20-53-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 22-20-53-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 22-20-53-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 22-21-58-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 22-21-58-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 22-21-58-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 22-21-58-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 22-21-58-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 22-21-58-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 22-22-15-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 22-22-15-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 22-22-15-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 22-22-15-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 22-22-15-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 22-22-26-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 22-22-54-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 22-22-54-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 22-22-54-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 22-22-54-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 22-22-54-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 22-23-23-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 22-23-24-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 22-23-24-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 22-23-24-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 22-23-24-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 22-23-47-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 22-34-26-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 22-34-26-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 22-34-26-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 22-34-26-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 22-34-30-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 22-34-38-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 23-39-20-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 23-39-20-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 23-39-20-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 23-39-20-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 23-39-24-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 23-40-36-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 23-40-36-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 23-40-36-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 23-40-36-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 23-40-49-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 23-40-49-0 Infos : DirectoryThread :: fichier:ask.py->block N'0
+2014-12-11 : 23-40-49-0 Infos : DirectoryThread :: fichier:ask.py->block N'1
+2014-12-11 : 23-40-49-0 Infos : DirectoryThread :: fichier:ask.py->block N'2
+2014-12-11 : 23-40-49-0 Infos : DirectoryThread :: fichier:ask.py->block N'3
+2014-12-11 : 23-40-49-0 Infos : DirectoryThread :: fichier:ask.py->block N'4
+2014-12-11 : 23-40-49-0 Infos : DirectoryThread :: fichier:ask.py->block N'5
+2014-12-11 : 23-40-49-0 Infos : DirectoryThread :: fichier:ask.py->block N'6
+2014-12-11 : 23-40-49-0 Infos : DirectoryThread :: fichier:ask.py->block N'7
+2014-12-11 : 23-40-49-0 Infos : DirectoryThread :: fichier:ask.py->block N'8
+2014-12-11 : 23-40-49-0 Infos : DirectoryThread :: fichier:ask.py->block N'9
+2014-12-11 : 23-40-49-0 Infos : DirectoryThread :: fichier:ask.py->block N'10
+2014-12-11 : 23-40-49-0 Infos : DirectoryThread :: fichier:ask.py->block N'11
+2014-12-11 : 23-40-49-0 Infos : DirectoryThread :: fichier:ask.py->block N'12
+2014-12-11 : 23-40-49-0 Infos : DirectoryThread :: fichier:ask.py->block N'13
+2014-12-11 : 23-40-49-0 Infos : DirectoryThread :: fichier:ask.py->block N'14
+2014-12-11 : 23-40-49-0 Infos : DirectoryThread :: fichier:ask.py->block N'15
+2014-12-11 : 23-40-49-0 Infos : DirectoryThread :: fichier:ask.py->block N'16
+2014-12-11 : 23-40-49-0 Infos : DirectoryThread :: fichier:ask.py->block N'17
+2014-12-11 : 23-40-49-0 Infos : DirectoryThread :: fichier:ask.py->block N'18
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:ask.py->block N'19
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:ask.py->block N'20
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:ask.py->block N'21
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:ask.py->block N'22
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:ask.py->block N'23
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:ask.py->block N'24
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:ask.py->block N'25
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:ask.py->block N'26
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:ask.py->block N'27
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:ask.py->block N'28
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:ask.py->block N'29
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:ask.py->block N'30
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:bot.py->block N'0
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:bot.py->block N'1
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:bot.py->block N'2
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:bot.py->block N'3
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:bot.py->block N'4
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:bot.py->block N'5
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:bot.py->block N'6
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:bot.py->block N'7
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:bot.py->block N'8
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:bot.py->block N'9
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:bot.py->block N'10
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:bot.py->block N'11
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:bot.py->block N'12
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:bot.py->block N'13
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:bot.py->block N'14
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:bot.py->block N'15
+2014-12-11 : 23-40-50-0 Infos : DirectoryThread :: fichier:bot.py->block N'16
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'17
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'18
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'19
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'20
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'21
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'22
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'23
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'24
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'25
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'26
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'27
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'28
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'29
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'30
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'31
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'32
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'33
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'34
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'35
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'36
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'37
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'38
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'39
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'40
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'41
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'42
+2014-12-11 : 23-40-51-0 Infos : DirectoryThread :: fichier:bot.py->block N'43
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'44
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'45
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'46
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'47
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'48
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'49
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'50
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'51
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'52
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'53
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'54
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'55
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'56
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'57
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'58
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'59
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'60
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'61
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'62
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'63
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'64
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'65
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'66
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'67
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'68
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'69
+2014-12-11 : 23-40-52-0 Infos : DirectoryThread :: fichier:bot.py->block N'70
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot.py->block N'71
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot.py->block N'72
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot.py->block N'73
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot.py->block N'74
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot.py->block N'75
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot.py->block N'76
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot.py->block N'77
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot.py->block N'78
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot.py->block N'79
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot.py->block N'80
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot.py->block N'81
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot13.py->block N'0
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot13.py->block N'1
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot13.py->block N'2
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot13.py->block N'3
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot13.py->block N'4
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot13.py->block N'5
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot13.py->block N'6
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot13.py->block N'7
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot13.py->block N'8
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot13.py->block N'9
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot13.py->block N'10
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot13.py->block N'11
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot13.py->block N'12
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot13.py->block N'13
+2014-12-11 : 23-40-53-0 Infos : DirectoryThread :: fichier:bot13.py->block N'14
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'15
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'16
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'17
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'18
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'19
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'20
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'21
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'22
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'23
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'24
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'25
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'26
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'27
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'28
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'29
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'30
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'31
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'32
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'33
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'34
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'35
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'36
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'37
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'38
+2014-12-11 : 23-40-54-0 Infos : DirectoryThread :: fichier:bot13.py->block N'39
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'40
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'41
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'42
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'43
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'44
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'45
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'46
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'47
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'48
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'49
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'50
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'51
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'52
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'53
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'54
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'55
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'56
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'57
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'58
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'59
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'60
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'61
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'62
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'63
+2014-12-11 : 23-40-55-0 Infos : DirectoryThread :: fichier:bot13.py->block N'64
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'65
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'66
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'67
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'68
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'69
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'70
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'71
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'72
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'73
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'74
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'75
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'76
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'77
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'78
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'79
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'80
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'81
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'82
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'83
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'84
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'85
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'86
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'87
+2014-12-11 : 23-40-56-0 Infos : DirectoryThread :: fichier:bot13.py->block N'88
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot13.py->block N'89
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot13.py->block N'90
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot13.py->block N'91
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot13.py->block N'92
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot13.py->block N'93
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot13.py->block N'94
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot13.py->block N'95
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot13.py->block N'96
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot64.py->block N'0
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot64.py->block N'1
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot64.py->block N'2
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot64.py->block N'3
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot64.py->block N'4
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot64.py->block N'5
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot64.py->block N'6
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot64.py->block N'7
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot64.py->block N'8
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot64.py->block N'9
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot64.py->block N'10
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot64.py->block N'11
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot64.py->block N'12
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot64.py->block N'13
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot64.py->block N'14
+2014-12-11 : 23-40-57-0 Infos : DirectoryThread :: fichier:bot64.py->block N'15
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'16
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'17
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'18
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'19
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'20
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'21
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'22
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'23
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'24
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'25
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'26
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'27
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'28
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'29
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'30
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'31
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'32
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'33
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'34
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'35
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'36
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'37
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'38
+2014-12-11 : 23-40-58-0 Infos : DirectoryThread :: fichier:bot64.py->block N'39
+2014-12-11 : 23-42-11-0 Infos : Configuration :: Création du signleton, Nombre connections serveur = 5 Nombre envois simultanés 5 Nombre receptions simultanées 5 timeoutscan 1000
+2014-12-11 : 23-42-11-0 Infos : Configuration :: Modification du nombre de connections serveur : 5
+2014-12-11 : 23-42-12-0 Infos : Configuration :: Modification du nombre d'envois simultanés : 5
+2014-12-11 : 23-42-12-0 Infos : Configuration :: Modification du nombre de récéptions simultanées : 5
+2014-12-11 : 23-42-13-0 Infos : Configurationinterne :: création du singleton
+2014-12-11 : 23-42-24-0 Infos : Configurationinterne :: destruction du singleton
+2014-12-11 : 23-42-31-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.1 à la liste de serveurs
+2014-12-11 : 23-42-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.2 à la liste de serveurs
+2014-12-11 : 23-42-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.3 à la liste de serveurs
+2014-12-11 : 23-42-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.4 à la liste de serveurs
+2014-12-11 : 23-42-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.5 à la liste de serveurs
+2014-12-11 : 23-42-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.6 à la liste de serveurs
+2014-12-11 : 23-42-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.7 à la liste de serveurs
+2014-12-11 : 23-42-32-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.12 à la liste de serveurs
+2014-12-11 : 23-42-33-0 Infos : ConfigurationInterne :: Ajout du serveur 127.0.0.24 à la liste de serveurs

@@ -41,7 +41,7 @@ void DetectionMainThread() {
 	}
 
 	std::cout << "** Waiting..." << std::endl;
-	pthread_join( t1, &result );
+	//pthread_join( t1, &result );
 	std::cout << "** Fini..." << std::endl;
 	
 	
