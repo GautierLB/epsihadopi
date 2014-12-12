@@ -1,12 +1,13 @@
 #include "Fichier.h"
 
 
-Fichier::Fichier(string p_NomFichier, string p_hash, string p_pathfile)
+Fichier::Fichier(string p_NomFichier, string p_hash, string p_pathfile,vector<Block> p_vb)
 {
-	vector<string>listeBlocks();
+	
 	NomFichier = p_NomFichier;
 	EmpreinteNumerique = p_hash;
 	pathfile = p_pathfile;
+	listeBlock = p_vb;
 }
 
 Fichier::~Fichier()
@@ -34,15 +35,15 @@ std::string Fichier::getEmpreinteNumerique()
 	return EmpreinteNumerique;
 }
 
-vector<string>Fichier::getListeBlocks()
+vector<Block>Fichier::getListeBlock()
 {
-	return listeBlocks;
+	return listeBlock;
 }
 
-void Fichier::addBlock(string s)
+void Fichier::addBlock(Block p_block)
 {
 	
-	listeBlocks.push_back(s);
+	listeBlock.push_back(p_block);
 	
 }
 

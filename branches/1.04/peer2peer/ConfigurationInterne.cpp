@@ -63,6 +63,12 @@ vector<Fichier> ConfigurationInterne::getFichiers()
 	return ListeFichier;
 }
 
+Fichier ConfigurationInterne::getFichierById(int idFichier)
+{
+	 
+	return ListeFichier[idFichier];
+}
+
 string ConfigurationInterne::getNomFichierId(int idFichier)
 {
 	return ListeFichier[idFichier].getNomFichier();
@@ -79,7 +85,3 @@ string ConfigurationInterne::getPathFileId(int idFichier)
 	return ListeFichier[idFichier].getPathFile();
 }
 
-vector<string> ConfigurationInterne::getListeBlockId(int idFichier)
-{
-	return ListeFichier[idFichier].getListeBlocks();
-}
