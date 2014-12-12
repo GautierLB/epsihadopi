@@ -2,6 +2,7 @@
 #include <sys/types.h>
 #include "ConfigurationInterne.h"
 #include "Fichier.h"
+#include "Block.h"
 #include <pthread.h>
 #include <dirent.h>
 #include <CLibSha224.h>
@@ -18,23 +19,25 @@ int isDirectory =16384;	//folder
 
 void *directoryBrowseFunc(void *p_arg)
 {
-
-	ConfigurationInterne configInt = *ConfigurationInterne::getInstance();
+	ConfigurationInterne* config= ConfigurationInterne::getInstance();
 	struct dirent *lecture;
 	DIR *rep;
 	//const char *path = ".\\";
-	//const char *path = "C:\\Users\\quent_000\\Desktop\\test";
+	const char *path = "C:\\Users\\quent_000\\Desktop\\test";
 	//const char *path = "C:\\Users\\Fran\\Desktop\\python";
 	//const char *path = "C:\\Users\\NEWBIE\\Desktop\\test";
-	const char *path ="C:\\Users\\Gautier\\Desktop\\Nouveau dossier";
+	//const char *path ="C:\\Users\\Gautier\\Desktop\\Nouveau dossier";
 	
 	LOG log; 
 	rep = opendir(path);
+	unsigned int i=0;
+	unsigned char buffer[] = "AZERTYUIOPLLKJHGFDSQX";
 
 	while ((lecture = readdir(rep))) 
 	{
 
 		std::vector<std::string> cnt;
+		std::vector<Block> vb;
 		std::string  pathfile = string(path) + '\\' + lecture->d_name;
 		
 		
@@ -44,25 +47,13 @@ void *directoryBrowseFunc(void *p_arg)
 			continue;
 		}
 		CLibSha224 hash = CLibSha224(pathfile);
-		Fichier f =  Fichier(lecture->d_name, hash.getHash(),pathfile);
-		configInt.addFichier(f);
+		
 
-	}
-	
-	unsigned int i=0;
-	unsigned char buffer[] = "AZERTYUIOPLLKJHGFDSQX";
-	
-	while(i != configInt.getFichiers().size())
-	{
-		//std::list<string> blocs = ls[i];
-
-		std::cout << "fichier: " << i << " ~ " << configInt.getNomFichierId(i) <<std::endl;
-		CFileBinary fin( configInt.getPathFileId(i));
-		std::cout << "fichier: " << configInt.getNomFichierId(i) << "~" <<  fin.getFileSize() << " byte(s)." << std::endl;
+		// découpage en blocs
+		CFileBinary fin(pathfile);
 		fin.open( EFileOpenMode::read );
 		int nbBlock = floor(fin.getFileSize()/20);
 		
-
 		for(int a = 0;a<nbBlock;a++)
 		{
 		   memset( buffer, 0, sizeof( buffer ) );
@@ -72,13 +63,17 @@ void *directoryBrowseFunc(void *p_arg)
 		   for(int j=0;j<21;j++){
 			   temp += buffer[j];
 		   }
-		   
-			string ligne="DirectoryThread :: fichier:"+ configInt.getNomFichierId(i) +"->"+"block N'" + std::to_string(a); 
-			log.ecrire(ligne);
-		    configInt.getListeBlockId(i).push_back(temp);
+		   Block b = Block(a,temp);
+		   vb.push_back(b);
+			
+			
 		}
-		i++;
+		Fichier f =  Fichier(lecture->d_name, hash.getHash(),pathfile, vb);
+
+		config->addFichier(f);
 	}
+	
+
 
 /*
 affichage de debug qui liste les bloques
@@ -121,7 +116,7 @@ void directoryThread()
 	}
 
 	std::cout << "** Waiting..." << std::endl;
-	pthread_join( t1, &result );
+//	pthread_join( t1, &result );
 	return;
 }
 
