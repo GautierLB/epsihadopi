@@ -11,11 +11,11 @@ Année : 2014
 class Block
 {
 	public:
-		Block(int p_numero,std::string p_content);
-		~Block();
+		Block(int p_numero,std::string p_content); //Constructeur
+		~Block(); //Destructeur
 
-		std::string getContent();
-		int getNumero();
+		std::string getContent(); //Contenu du bloc
+		int getNumero(); //Numéro du bloc
 
 
 	private:

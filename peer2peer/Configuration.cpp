@@ -31,14 +31,14 @@ Configuration::~Configuration()
     log.ecrire(s);
 }
 
-// Retourne l'adresse du signleton
+// Retourne l'adresse du singleton
 Configuration& Configuration::getInstanceRef()
 {
 	static Configuration m_instance;
 	return m_instance;
 }
 
-// Retourne l'adresse du singletion
+// Retourne l'adresse du singleton
 Configuration* Configuration::getInstance()
 {
 	Configuration& config = Configuration::getInstanceRef();

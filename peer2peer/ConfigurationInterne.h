@@ -19,22 +19,22 @@ using namespace std;
 class ConfigurationInterne
 {
 	public:
-		~ConfigurationInterne();
-		static ConfigurationInterne& getInstanceRef();
-		static ConfigurationInterne* getInstance();
-		void ConfigurationInterne::addServeur(string toadd);
-		void ConfigurationInterne::delServeur(string todel);
-		list<string> ConfigurationInterne::getServeurs();
-		list<Fichier> ConfigurationInterne::getFichiers();
-		void ConfigurationInterne::addFichier(Fichier f);
-		Fichier ConfigurationInterne::getFichierById(int idFichier);
+		~ConfigurationInterne(); //Destructeur
+		static ConfigurationInterne& getInstanceRef(); // Retourne l'adresse du singleton
+		static ConfigurationInterne* getInstance(); // Retourne l'adresse du singleton
+		void ConfigurationInterne::addServeur(string toadd); //Ajout d'un serveur à la liste
+		void ConfigurationInterne::delServeur(string todel); //Suppression d'un serveur de la liste
+		list<string> ConfigurationInterne::getServeurs(); //Obtenir la liste des serveurs
+		list<Fichier> ConfigurationInterne::getFichiers(); //Obtenir la liste des fichiers
+		void ConfigurationInterne::addFichier(Fichier f); //Ajouter un fichier à la liste des fichiers
+		Fichier ConfigurationInterne::getFichierById(int idFichier); //Obtenir un fichier par son ID
 
 
 	private:
-		list<Fichier> ListeFichier;	
-		list<string> ListeServeur;
-		ConfigurationInterne();
-		sem_t mutex;
+		list<Fichier> ListeFichier;	//Liste des fichiers
+		list<string> ListeServeur; //Liste des serveurs
+		ConfigurationInterne(); //Constructeur
+		sem_t mutex; //Sémaphore
 		static ConfigurationInterne m_instance;
 };
 

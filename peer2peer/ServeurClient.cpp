@@ -11,14 +11,10 @@ Année : 2014
 #include "TabFichierThread.h"
 
 void *LancementServeurClient( void *p_arg ) {
-		//const char* test=ip->c_str();
-
+	//const char* test=ip->c_str();
 	ConfigurationInterne* config= ConfigurationInterne::getInstance();
-	
-	
 	list<string> serveur=config->getServeurs();
-
-
+	
 	for (std::list<string>::iterator it = serveur.begin(); it !=  serveur.end(); it++){
 		string iptemp=*it;
 		TabFichierThread(&iptemp);
@@ -31,10 +27,7 @@ void LancementServeurClient() {
 	pthread_t t1;
 	void *result = nullptr;
 
-
-
 	if (pthread_create( &t1, 0, LancementServeurClient, (void *) 1 ) != 0) {
-		
 		return;
 	}
 	else {
@@ -42,8 +35,6 @@ void LancementServeurClient() {
 	}
 
 	pthread_join( t1, &result );
-	
-
 	return;
 }
 
