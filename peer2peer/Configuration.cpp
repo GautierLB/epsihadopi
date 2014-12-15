@@ -7,8 +7,10 @@ Année : 2014
 
 using namespace std;
 
-//Configuration Configuration::m_instance=Configuration();
+// Création de l'instance
+Configuration Configuration::m_instance=Configuration();
 
+// Constructeur -- paramètres de base : 5 connections max serveurs, 5 envois simultanés max, 5 récéptions simultanées max, 1000ms entre chaque scan de fichiers
 Configuration::Configuration()
 {
 	nbConnectionServeur = 5;
@@ -21,6 +23,7 @@ Configuration::Configuration()
     log.ecrire(s);
 }
 
+// Destructeur
 Configuration::~Configuration()
 {
 	LOG log; 
@@ -28,19 +31,21 @@ Configuration::~Configuration()
     log.ecrire(s);
 }
 
+// Retourne l'adresse du signleton
 Configuration& Configuration::getInstanceRef()
 {
 	static Configuration m_instance;
 	return m_instance;
 }
+
+// Retourne l'adresse du singletion
 Configuration* Configuration::getInstance()
 {
 	Configuration& config = Configuration::getInstanceRef();
 	return &config;
 }
 
-
-// Setters
+// Modifie le nombre de connections max serveur
 void Configuration::setNbConnectionServeur(int nb)
 {
 	nbConnectionServeur = nb;
@@ -49,6 +54,7 @@ void Configuration::setNbConnectionServeur(int nb)
     log.ecrire(s);
 }
 
+// Modifie le temps entre chaque scan des fichiers
 void Configuration::setTimeOutScan(int time)
 {
 	timeOutScan = time;
@@ -57,6 +63,7 @@ void Configuration::setTimeOutScan(int time)
     log.ecrire(s);
 }
 
+// Modifie le nombre d'envois simultanés
 void Configuration::setNbEnvoieSimultane(int nb)
 {
 	nbEnvoieSimultane = nb;
@@ -65,6 +72,7 @@ void Configuration::setNbEnvoieSimultane(int nb)
     log.ecrire(s);
 }
 
+// Modifie le nombre de récéptions simultanées
 void Configuration::setNbReceptionSimultane(int nb)
 {
 	nbReceptionSimultane = nb;
@@ -73,23 +81,25 @@ void Configuration::setNbReceptionSimultane(int nb)
     log.ecrire(s);
 }
 
-//Getters
-
+// Renvoie le nombre de connexions serveurs
 int Configuration::getNbConnectionServeur()
 {
 	return nbConnectionServeur;
 }
 
+// Renvoie le temps entre chaque scan de fichiers
 int Configuration::getTimeOutScan()
 {
 	return timeOutScan;
 }
 
+// Renvoie le nombre d'envois simultanés max
 int Configuration::getNbEnvoieSimultane()
 {
 	return nbEnvoieSimultane;
 }
 
+// Renvoie le nombre de récéptions simultanées
 int Configuration::getNbReceptionSimultane()
 {
 	return nbReceptionSimultane;

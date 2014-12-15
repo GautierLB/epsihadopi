@@ -73,7 +73,7 @@ void ConfigurationInterne::addFichier(Fichier f)
 {
 	ListeFichier.push_back(f);
 	LOG log; 
-	string s="ConfigurationInterne :: Ajout du fichier " + f.getNomFichier + " à la liste de fichiers";
+	string s="ConfigurationInterne :: Ajout du fichier foo à la liste de fichiers";
     log.ecrire(s);
 }
 
