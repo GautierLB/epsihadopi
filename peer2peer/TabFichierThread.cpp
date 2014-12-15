@@ -13,7 +13,7 @@ Année : 2014
 #include "ConfigurationInterne.h"
 
 void *TabFichierThread(void* ip) {
-	int c;
+
 	std::string* ipfinal=(std::string*)ip;
 	DemandeTab(*ipfinal);
 	return nullptr;
@@ -103,8 +103,10 @@ void DemandeTab(std::string ip) {
 			
 				
 					//Recherche si fichier de même nom
-					std::cout <<"Recherche "<< fichier << " "<< hash <<std::endl;
-
+					//std::cout <<"Recherche "<< fichier << " "<< hash <<std::endl;
+					LOG log; 
+					string s="TabFichierThread :: Recherche Fichier " + fichier + " avec pour hash:"+hash;
+					log.ecrire(s);
 					//Telechargement fichier apres test hash Fonction de recherche
 
 

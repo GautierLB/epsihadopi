@@ -10,21 +10,40 @@ Année : 2014
 #include "ConfigurationInterne.h"
 #include "TabFichierThread.h"
 
-void LancementServeurClient() {
-	
-	//const char* test=ip->c_str();
+void *LancementServeurClient( void *p_arg ) {
+		//const char* test=ip->c_str();
 
 	ConfigurationInterne* config= ConfigurationInterne::getInstance();
 	
-	for(;;){
+	
 	list<string> serveur=config->getServeurs();
 
-	std::list<string>::iterator itdebut = serveur.begin();
-	std::list<string>::iterator itfin = serveur.end();
-	for (std::list<string>::iterator it = itdebut; it != itfin; it++){
+
+	for (std::list<string>::iterator it = serveur.begin(); it !=  serveur.end(); it++){
 		string iptemp=*it;
 		TabFichierThread(&iptemp);
 	}
+	return nullptr;
+}
+
+
+void LancementServeurClient() {
+	pthread_t t1;
+	void *result = nullptr;
+
+
+
+	if (pthread_create( &t1, 0, LancementServeurClient, (void *) 1 ) != 0) {
+		
+		return;
 	}
+	else {
+	
+	}
+
+	pthread_join( t1, &result );
+	
+
 	return;
 }
+
