@@ -96,7 +96,7 @@ void directoryThread()
 	{
 		
 	}
-	 s="DirectoryThread :: fin du thread de detection des fichiers";
+	s="DirectoryThread :: fin du thread de detection des fichiers";
     log.ecrire(s);
 	pthread_join( t1, &result );
 	return;

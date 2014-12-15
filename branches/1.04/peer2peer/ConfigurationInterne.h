@@ -28,13 +28,17 @@ class ConfigurationInterne
 		list<Fichier> ConfigurationInterne::getFichiers(); //Obtenir la liste des fichiers
 		void ConfigurationInterne::addFichier(Fichier f); //Ajouter un fichier à la liste des fichiers
 		Fichier ConfigurationInterne::getFichierById(int idFichier); //Obtenir un fichier par son ID
-
+		void setContinu(boolean p_b);
+		boolean getContinu();
+		
 
 	private:
 		list<Fichier> ListeFichier;	//Liste des fichiers
 		list<string> ListeServeur; //Liste des serveurs
 		ConfigurationInterne(); //Constructeur
 		sem_t mutex; //Sémaphore
+		boolean continu;
+
 		static ConfigurationInterne m_instance;
 };
 
