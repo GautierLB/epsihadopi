@@ -73,25 +73,7 @@ void *directoryBrowseFunc(void *p_arg)
 
 		config->addFichier(f);
 	}
-	
 
-
-/*
-affichage de debug qui liste les bloques
-	
-	i=0;/*
-	while(i != config.ListeFichier.size())
-	{
-		int a=0;
-		while(a != config.ListeFichier[i].getListeBlocks().size())
-		{
-			std::cout <<   "    block N:"<<  a << " => " <<  config.ListeFichier[i].listeBlocks[a] << std::endl;
-			a++;
-		}
-		i++;
-
-	}
-*/
 	closedir(rep);
 	
 	return nullptr;
@@ -103,21 +85,16 @@ void directoryThread()
 
 	void *result = nullptr;
 
-	std::cout << std::endl;
-	std::cout << "--------------------------------------------------" << std::endl;
-
-	std::cout << "** Creating Directory thread..." << std::endl;
 	if (pthread_create( &t1, 0,directoryBrowseFunc,(void *) 1) != 0) 
 	{
-		std::cerr << "** FAIL Creation Directory Thread" << std::endl;
+		
 		return;
 	}
 	else 
 	{
-		std::cout << "** Directory Thread creation OK" << std::endl;
+		
 	}
 
-	std::cout << "** Waiting..." << std::endl;
 //	pthread_join( t1, &result );
 	return;
 }
