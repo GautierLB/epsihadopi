@@ -4,7 +4,11 @@ Organisation : I4Initial EPSI Lyon
 Année : 2014
 */
 #include "ConfigurationInterne.h"
+
+// Création de l'instance 
 ConfigurationInterne ConfigurationInterne::m_instance=ConfigurationInterne();
+
+// Constructeur -- Initialisation des listes, de la section critique et du log.
 ConfigurationInterne::ConfigurationInterne()
 {
 	sem_init(&mutex, 0, 10);
@@ -15,6 +19,7 @@ ConfigurationInterne::ConfigurationInterne()
     log.ecrire(s);
 }
 
+// Destructeur
 ConfigurationInterne::~ConfigurationInterne()
 {
 	LOG log; 
@@ -22,20 +27,26 @@ ConfigurationInterne::~ConfigurationInterne()
     log.ecrire(s);
 }
 
+// Retourne l'adresse du signleton
 ConfigurationInterne& ConfigurationInterne::getInstanceRef()
 {
 	return m_instance;
 }
+
+// Retourne l'adresse du singleton
 ConfigurationInterne* ConfigurationInterne::getInstance()
 {
 	ConfigurationInterne& interne = ConfigurationInterne::getInstanceRef();
 	return &interne;
 }
 
+// Renvoie la liste de serveurs
 list<string> ConfigurationInterne::getServeurs()
 {
 	return ListeServeur;
 }
+
+// Ajoute un serveur à la liste des serveurs : protégé par une section critique pour conservr l'intégrité des données
 void ConfigurationInterne::addServeur(string toadd)
 {
 	sem_wait(&mutex);
@@ -46,6 +57,7 @@ void ConfigurationInterne::addServeur(string toadd)
 	sem_post(&mutex);
 }
 
+// Suppression d'un serveur, protégé par une section critique aussi.
 void ConfigurationInterne::delServeur(string todel)
 {
 	sem_wait(&mutex);
@@ -56,42 +68,17 @@ void ConfigurationInterne::delServeur(string todel)
 	sem_post(&mutex);
 }
 
-
+// Ajout d'un fichier à la liste des fichiers, pas besoin d'être protégé par une sémaphore puisque tous les ajouts sont gérés dans un seul thread
 void ConfigurationInterne::addFichier(Fichier f)
 {
-	sem_wait(&mutex);
 	ListeFichier.push_back(f);
-	sem_post(&mutex);
+	LOG log; 
+	string s="ConfigurationInterne :: Ajout du fichier " + f.getNomFichier + " à la liste de fichiers";
+    log.ecrire(s);
 }
 
+// Renvoie la liste des fichiers
 list<Fichier> ConfigurationInterne::getFichiers()
 {
 	return ListeFichier;
 }
-/*
-Fichier ConfigurationInterne::getFichierById(int idFichier)
-{
-	 //return ListeFichier.find_element(idFichier);
-	//return ListeFichier[idFichier];
-	Fichier f = Fichier();
-	return f;
-}*/
-
-string ConfigurationInterne::getNomFichierId(int idFichier)
-{ 
-	//return ListeFichier[idFichier].getNomFichier();
-	return "";
-}
-
-void ConfigurationInterne::setNomFichierId(int idFichier, string filename)
-{
-	//ListeFichier[idFichier].setNomFichier(filename);
-}
-
-
-string ConfigurationInterne::getPathFileId(int idFichier)
-{
-	//return ListeFichier[idFichier].getPathFile();
-	return "";
-}
-

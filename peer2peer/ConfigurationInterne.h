@@ -18,23 +18,18 @@ using namespace std;
 
 class ConfigurationInterne
 {
-
 	public:
 		~ConfigurationInterne();
 		static ConfigurationInterne& getInstanceRef();
 		static ConfigurationInterne* getInstance();
 		void ConfigurationInterne::addServeur(string toadd);
 		void ConfigurationInterne::delServeur(string todel);
-
 		list<string> ConfigurationInterne::getServeurs();
 		list<Fichier> ConfigurationInterne::getFichiers();
-
 		string ConfigurationInterne::getNomFichierId(int idFichier);
-		string ConfigurationInterne::getPathFileId(int idFichier);
-		
+		string ConfigurationInterne::getPathFileId(int idFichier);	
 		void ConfigurationInterne::setNomFichierId(int idFichier, string filename);
 		void ConfigurationInterne::addFichier(Fichier f);
-
 		Fichier ConfigurationInterne::getFichierById(int idFichier);
 
 
