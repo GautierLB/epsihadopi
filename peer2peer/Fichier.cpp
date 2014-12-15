@@ -1,5 +1,9 @@
+/*
+Authors : CURTET Quentin, MORBOIS Antoine, LE BISSONNAIS Gautier, POUGET François.
+Organisation : I4Initial EPSI Lyon
+Année : 2014
+*/
 #include "Fichier.h"
-
 
 Fichier::Fichier(string p_NomFichier, string p_hash, string p_pathfile,vector<Block> p_vb)
 {
