@@ -25,9 +25,9 @@ class ConfigurationInterne
 		static ConfigurationInterne* getInstance();
 		void ConfigurationInterne::addServeur(string toadd);
 		void ConfigurationInterne::delServeur(string todel);
-		list<string> ConfigurationInterne::getServeurs();
 
-		vector<Fichier> ConfigurationInterne::getFichiers();
+		list<string> ConfigurationInterne::getServeurs();
+		list<Fichier> ConfigurationInterne::getFichiers();
 
 		string ConfigurationInterne::getNomFichierId(int idFichier);
 		string ConfigurationInterne::getPathFileId(int idFichier);
@@ -39,8 +39,7 @@ class ConfigurationInterne
 
 
 	private:
-		vector<Fichier> ListeFichier;
-		
+		list<Fichier> ListeFichier;	
 		list<string> ListeServeur;
 		ConfigurationInterne();
 		sem_t mutex;

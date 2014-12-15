@@ -8,7 +8,8 @@ ConfigurationInterne ConfigurationInterne::m_instance=ConfigurationInterne();
 ConfigurationInterne::ConfigurationInterne()
 {
 	sem_init(&mutex, 0, 10);
-	std::list<string> ListeServeur();
+	list<string> ListeServeur();
+	list<string> ListeFichier();
 	LOG log; 
 	string s="Configurationinterne :: création du singleton";
     log.ecrire(s);
@@ -63,30 +64,34 @@ void ConfigurationInterne::addFichier(Fichier f)
 	sem_post(&mutex);
 }
 
-vector<Fichier> ConfigurationInterne::getFichiers()
+list<Fichier> ConfigurationInterne::getFichiers()
 {
 	return ListeFichier;
 }
-
+/*
 Fichier ConfigurationInterne::getFichierById(int idFichier)
 {
-	 
-	return ListeFichier[idFichier];
-}
+	 //return ListeFichier.find_element(idFichier);
+	//return ListeFichier[idFichier];
+	Fichier f = Fichier();
+	return f;
+}*/
 
 string ConfigurationInterne::getNomFichierId(int idFichier)
 { 
-	return ListeFichier[idFichier].getNomFichier();
+	//return ListeFichier[idFichier].getNomFichier();
+	return "";
 }
 
 void ConfigurationInterne::setNomFichierId(int idFichier, string filename)
 {
-	ListeFichier[idFichier].setNomFichier(filename);
+	//ListeFichier[idFichier].setNomFichier(filename);
 }
 
 
 string ConfigurationInterne::getPathFileId(int idFichier)
 {
-	return ListeFichier[idFichier].getPathFile();
+	//return ListeFichier[idFichier].getPathFile();
+	return "";
 }
 
