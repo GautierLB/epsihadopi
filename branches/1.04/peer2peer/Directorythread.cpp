@@ -38,7 +38,7 @@ void *directoryBrowseFunc(void *p_arg)
 	{
 
 		std::vector<std::string> cnt;
-		std::vector<Block> vb;
+		list<Block> vb;
 		std::string  pathfile = string(path) + '\\' + lecture->d_name;
 		
 		
