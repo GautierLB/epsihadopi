@@ -31,7 +31,7 @@ void mainThread() {
 	//pthread_t t_directory;
 	void *result = nullptr;
 
-	std::cout << std::endl;
+	
 
 	if (pthread_create( &t1, 0, MainThreadFunc, (void *) 1 ) != 0) {
 		std::cerr << "** FAIL Creation Main Thread" << std::endl;
