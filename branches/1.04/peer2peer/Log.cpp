@@ -45,20 +45,14 @@ string LOG::ecrire(const string &s)
 		_int64 lines = std::count( 
 			std::istreambuf_iterator<char>( f ), 
 			std::istreambuf_iterator<char>(), '\n' );
-		//std::cout << lines << std::endl;
 		std::cout << s << std::endl;
 		// Ferme le fichier :
 		f.close();
 	}
 
 	std::ifstream File("log.txt"); 
-  
-    //std::cout << CountLines(File) << std::endl; 
-  
     File.clear(); 
     File.seekg(0, std::ios::beg); 
-  
-    //std::cout << CountLines(File) << std::endl; 
 	
 	return "";
 	sem_post(&mutex);
@@ -73,7 +67,6 @@ string LOG::ecrire_complexe(const string &s_complexe)
 	fstream f("log_complexe.txt",ios_base::in | ios_base::out | ios::ate);
 	if (f.is_open())
 	{
-		
 		CDateTime now;
 		now.Now();
 		// Écrit les données :
@@ -84,19 +77,15 @@ string LOG::ecrire_complexe(const string &s_complexe)
 		_int64 lines = std::count( 
 			std::istreambuf_iterator<char>( f ), 
 			std::istreambuf_iterator<char>(), '\n' );
-		//std::cout << lines << std::endl;
 		std::cout << s_complexe << std::endl;
 		// Ferme le fichier :
 		f.close();
 	}
 
 	std::ifstream File("log_complexe.txt"); 
-  
     File.clear(); 
     File.seekg(0, std::ios::beg); 
-  
-    //std::cout << CountLines(File) << std::endl; 
-	
+
 	return "";
 	sem_post(&mutex_complexe);
 }
