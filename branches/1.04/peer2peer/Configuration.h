@@ -33,6 +33,5 @@ class Configuration
 		unsigned short nbReceptionSimultane; //réception ~~
 		string logSimplifierName;
 		string logDebugName;
-
 };
 

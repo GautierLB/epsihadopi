@@ -99,7 +99,7 @@ void directoryThread()
 	return;
 }
 
-void compareFile(string p_nom, string p_hash)
+/*void compareFile(string p_nom, string p_hash)
 {
 	ConfigurationInterne configInt = *ConfigurationInterne::getInstance();
 	unsigned int i;
@@ -113,4 +113,4 @@ void compareFile(string p_nom, string p_hash)
 		
 	}
 
-}
+}*/
