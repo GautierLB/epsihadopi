@@ -14,6 +14,7 @@ ConfigurationInterne::ConfigurationInterne()
 	sem_init(&mutex, 0, 10);
 	list<string> ListeServeur();
 	list<string> ListeFichier();
+	continu = true;
 	LOG log; 
 	string s="Configurationinterne :: création du singleton";
     log.ecrire(s);
@@ -73,7 +74,7 @@ void ConfigurationInterne::addFichier(Fichier f)
 {
 	ListeFichier.push_back(f);
 	LOG log; 
-	string s="ConfigurationInterne :: Ajout du fichier foo à la liste de fichiers";
+	string s="ConfigurationInterne :: Ajout du fichier: " + f.getNomFichier() + "  à la liste de fichiers";
     log.ecrire(s);
 }
 
@@ -81,4 +82,11 @@ void ConfigurationInterne::addFichier(Fichier f)
 list<Fichier> ConfigurationInterne::getFichiers()
 {
 	return ListeFichier;
+}
+
+void ConfigurationInterne::setContinu(boolean p_b){
+		continu = p_b;
+}
+boolean ConfigurationInterne::getContinu(){
+		return continu;
 }

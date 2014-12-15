@@ -16,6 +16,7 @@ Configuration::Configuration()
 	nbConnectionServeur = 5;
 	nbEnvoieSimultane = 5;
 	nbReceptionSimultane = 5;
+	ipReseau = "127.0.0.";
 	timeOutScan = 1000;
 	LOG log; 
 	string s="Configuration :: Création du signleton, Nombre connections serveur = " + std::to_string(nbConnectionServeur) + " Nombre envois simultanés " +
@@ -104,3 +105,16 @@ int Configuration::getNbReceptionSimultane()
 {
 	return nbReceptionSimultane;
 }
+
+string Configuration::getIpReseau()
+{
+	return ipReseau;
+}
+
+// Renvoie le nombre de récéptions simultanées
+void Configuration::setIpReseau(string ip)
+{
+	ipReseau =ip;
+	
+}
+

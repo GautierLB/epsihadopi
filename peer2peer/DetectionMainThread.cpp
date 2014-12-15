@@ -16,14 +16,15 @@ Année : 2014
 #include "ConfigurationInterne.h"
 
 void *DetectionMainThreadFunc(void* ip) {
-	
-	while (true)
+	ConfigurationInterne* config= ConfigurationInterne::getInstance();
+	while (config->getContinu())
     {
    
 	std::string* adressip=(std::string*)ip;
 	BoucleRecherche(adressip);
 	Sleep(20000);
 	}
+	std::cout<<"fin detection serveur"<<std::endl;
 	return nullptr;
 }
 
@@ -31,8 +32,9 @@ void DetectionMainThread() {
 	pthread_t t1;
 	void *result = nullptr;
 
-
-	std::string *adressip=new std::string("127.0.0.");
+	Configuration* config= Configuration::getInstance();
+	std::string *adressip=new std::string(config->getIpReseau());
+	//Fonction permettant d'obtenir son Ip mais vue qu'on ne teste que 255 possibilités on rentre son reseau en argument
 	//std::string *adressip=new std::string(getIp());
 	if (pthread_create( &t1, 0, DetectionMainThreadFunc, ((void*)adressip)) != 0) {
 		
@@ -49,16 +51,16 @@ void BoucleRecherche(std::string* ip) {
 	
 	ConfigurationInterne* config= ConfigurationInterne::getInstance();
 	list<string> serveur=config->getServeurs();
-	for (std::list<string>::iterator it = serveur.begin(); it != serveur.end(); it++){
-		
-		VerificationThread(*it);
+	for (std::list<string>::iterator it = serveur.begin(); it != serveur.end() ; it++){
+		//Fonction permettant de verifier doublon (meme nom mais pas meme hash) mais probleme parcours liste
+		//VerificationThread(*it)
 			}
-	for (int i = 0; i < 50; i++){
+	for (int i = 0; i < 255; i++){
 		std:: string*adressiptemp =new std::string(*ip);
-
+		
 		*adressiptemp=*adressiptemp+std::to_string(i);
 		
-		//testConnectGoogleAsHttpClient(adressiptemp);
+		
 		DetectionThread(adressiptemp);
 	}	
 }

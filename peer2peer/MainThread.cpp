@@ -23,6 +23,7 @@ void *MainThreadFunc( void *p_arg ) {
 		
 		c = _getch();
     }while (c != 27);
+	config->setContinu(false);
 	return nullptr;
 }
 

@@ -50,7 +50,7 @@ int main( int argc, char *argv[] ) {
 
 	std::cout << "** Welcome to this demo skeleton." << std::endl;
 	int i=0;
-	for (i = 0; i< 4; i++)
+	for (i = 0; i< 5; i++)
 	{
 		if (argv[i] != nullptr)
 		{
@@ -65,27 +65,31 @@ int main( int argc, char *argv[] ) {
 	if (argv[1] != nullptr)
 	{
 		config.setNbConnectionServeur(atoi(argv[1]));
-		std::cout << "** Utilisation du parametre recu en ligne de commande pour le nombre de connections maximales serveur :" << argv[1] << std::endl;
+		std::cout << "** Utilisation du parametre recu en ligne de commande pour le nombre de connections maximales serveur : " << argv[1] << std::endl;
 	} 
 	if (argv[2] != nullptr)
 	{
 		config.setNbEnvoieSimultane(atoi(argv[2]));
-		std::cout << "** Utilisation du parametre recu en ligne de commande pour le nombre d'envois maximal serveur :" << argv[2] << std::endl;
+		std::cout << "** Utilisation du parametre recu en ligne de commande pour le nombre d'envois maximal serveur : " << argv[2] << std::endl;
 	}
 	if (argv[3] != nullptr)
 	{
 		config.setNbReceptionSimultane(atoi(argv[3]));
-		std::cout << "** Utilisation du parametre recu en ligne de commande pour le nombre de receptions maximales simultanees serveur :" << argv[3] << std::endl;
+		std::cout << "** Utilisation du parametre recu en ligne de commande pour le nombre de receptions maximales simultanees serveur : " << argv[3] << std::endl;
+	}
+	if (argv[4] != nullptr)
+	{
+		config.setIpReseau(string(argv[4]));
+		std::cout << "** Utilisation du parametre recu en ligne de commande pour l'ip du reseau  : " << argv[4] << std::endl;
 	}
 
-	//demos( argc, argv );
 
-	//directoryBrowse();
 
 	std::cout << "** Initialisation du programme" << std::endl;
 	std::cout << "** Nombre de connection maximales serveur : " << config.getNbConnectionServeur() <<endl;
 	std::cout << "** Nombre d'envois simultanes maximum : " << config.getNbEnvoieSimultane() <<endl;
 	std::cout << "** Nombre receptions simultanees maximum : " << config.getNbReceptionSimultane() <<endl;
+	std::cout << "** Ip de scan du reseau : " << config.getIpReseau() <<endl;
 	std::cout << "** Temps entre chaque scan : " << config.getTimeOutScan() <<endl;
 	
 	mainThread();

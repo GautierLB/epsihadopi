@@ -21,6 +21,8 @@ class Configuration
 		int getTimeOutScan(); //Obtenir le temps de recherche de client maximum
 		int getNbEnvoieSimultane(); //Obtenir le nombre d'envois simultanés
 		int getNbReceptionSimultane(); //Obtenir le nombre de réceptions simultanées
+		void setIpReseau(string ip); 
+		string getIpReseau(); 
 		static Configuration* getInstance(); // Retourne l'adresse du singleton
 		static Configuration& getInstanceRef(); // Retourne l'adresse du singleton
 
@@ -33,5 +35,6 @@ class Configuration
 		unsigned short nbReceptionSimultane; //réception ~~
 		string logSimplifierName;
 		string logDebugName;
+		string ipReseau;
 };
 

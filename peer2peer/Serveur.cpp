@@ -38,7 +38,8 @@ void Serveur() {
 	ConfigurationInterne* config= ConfigurationInterne::getInstance();
 	s.server( 6699, 5 );
 
-	for (;;) {
+
+	while (config->getContinu()){
 		std::string data, request;
 		int recvCount = 0;
 		char buffer[ 2048 ];

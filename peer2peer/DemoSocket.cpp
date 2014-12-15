@@ -375,7 +375,7 @@ void testHttpServer() {
 
 void testfonction(std::string* ip) {
 	std::cout << "Coucou" << *ip<< std::endl;
-	ConfigurationInterne* config= ConfigurationInterne::getInstance();
+/*	ConfigurationInterne* config= ConfigurationInterne::getInstance();
 	list<string> serveur=config->getServeurs();
 	for (std::list<string>::iterator it = serveur.begin(); it != serveur.end(); it++){
 		//testexistant(*it) ;
@@ -387,8 +387,8 @@ void testfonction(std::string* ip) {
 		*adressiptemp=*adressiptemp+std::to_string(i);
 		std::cout << *adressiptemp<< std::endl;
 		//testConnectGoogleAsHttpClient(adressiptemp);
-		DetectionThread(adressiptemp);
-	}	
+		DetectionThread(adressiptemp);*/
+	//}	
 }
 
 void testSocket() {
