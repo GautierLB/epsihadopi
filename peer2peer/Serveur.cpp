@@ -88,8 +88,8 @@ void Serveur() {
 		
 	
 			
-			const std::vector<Fichier> myCopy = config->getFichiers();
-			std::vector<Fichier>::const_iterator i = myCopy.begin();
+			const list<Fichier> myCopy = config->getFichiers();
+			list<Fichier>::const_iterator i = myCopy.begin();
 			while(i != myCopy.end())
 			{
 				Fichier fichiertemp=*i;
