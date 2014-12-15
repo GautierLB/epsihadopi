@@ -11,17 +11,20 @@ Année : 2014
 
 using namespace std;
 
+//Classe qui définit les méthodes et variables pour écrire dans les fichiers de log
+
 class LOG
 {
 	public:
-		LOG();
-		string ecrire(const string &s);
-		sem_t mutex;
-		sem_t mutex_complexe;
-		string ecrire_complexe(const string &s_complexe);
-		~LOG();
+		LOG(); //Constructeur
+		string ecrire(const string &s); //Méthode pour écrire dans le fichier de log simple
+		sem_t mutex; //Mutex du fichier de log simple
+		sem_t mutex_complexe; //Mutex du fichier de log complexe
+		string ecrire_complexe(const string &s_complexe); //Méthode pour écrire dans le fichier de log complexe
+		~LOG(); //Destructeur
 
 	private:
-		string s;
+		string s; //Variable qui reçoit les données à écrire dans le fichier de log simple
+		string s_complexe; //Variable qui reçoit les données à écrire dans le fichier de log complexe
 };
 #endif

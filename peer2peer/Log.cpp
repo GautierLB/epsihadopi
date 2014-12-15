@@ -15,7 +15,7 @@ using namespace std;
 
 LOG::LOG(){}; //Instanciation du constructeur
 
-
+//Comptage des lignes de fichiers
 int CountLines(std::ifstream& File) 
 { 
     int Count = 0; 
@@ -26,6 +26,7 @@ int CountLines(std::ifstream& File)
     return Count; 
 }
 
+//ecriture dans le fichier de log simple
 string LOG::ecrire(const string &s)
 {
 	sem_init(&mutex, 0, 10);
@@ -44,7 +45,7 @@ string LOG::ecrire(const string &s)
 		_int64 lines = std::count( 
 			std::istreambuf_iterator<char>( f ), 
 			std::istreambuf_iterator<char>(), '\n' );
-		std::cout << lines << std::endl;
+		//std::cout << lines << std::endl;
 		std::cout << s << std::endl;
 		// Ferme le fichier :
 		f.close();
@@ -52,17 +53,18 @@ string LOG::ecrire(const string &s)
 
 	std::ifstream File("log.txt"); 
   
-    std::cout << CountLines(File) << std::endl; 
+    //std::cout << CountLines(File) << std::endl; 
   
     File.clear(); 
     File.seekg(0, std::ios::beg); 
   
-    std::cout << CountLines(File) << std::endl; 
+    //std::cout << CountLines(File) << std::endl; 
 	
 	return "";
 	sem_post(&mutex);
 }
 
+//ecriture dans le fichier de log complexe
 string LOG::ecrire_complexe(const string &s_complexe)
 {
 	sem_init(&mutex_complexe, 0, 10);
@@ -82,7 +84,7 @@ string LOG::ecrire_complexe(const string &s_complexe)
 		_int64 lines = std::count( 
 			std::istreambuf_iterator<char>( f ), 
 			std::istreambuf_iterator<char>(), '\n' );
-		std::cout << lines << std::endl;
+		//std::cout << lines << std::endl;
 		std::cout << s_complexe << std::endl;
 		// Ferme le fichier :
 		f.close();
@@ -90,12 +92,10 @@ string LOG::ecrire_complexe(const string &s_complexe)
 
 	std::ifstream File("log_complexe.txt"); 
   
-    std::cout << CountLines(File) << std::endl; 
-  
     File.clear(); 
     File.seekg(0, std::ios::beg); 
   
-    std::cout << CountLines(File) << std::endl; 
+    //std::cout << CountLines(File) << std::endl; 
 	
 	return "";
 	sem_post(&mutex_complexe);
