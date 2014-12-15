@@ -92,6 +92,7 @@ affichage de debug qui liste les bloques
 	}
 */
 	closedir(rep);
+	
 	return nullptr;
 }
 

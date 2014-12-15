@@ -39,8 +39,8 @@ void DemandeTab(std::string ip) {
 	s.initEngine();
 	std::string data = "";
 	int recvCount = 0;
-	char buffer[ 1024 ];
-			
+	char buffer[ 2048 ];
+		ConfigurationInterne* config= ConfigurationInterne::getInstance();	
 		
 	
 	try{
@@ -87,7 +87,40 @@ void DemandeTab(std::string ip) {
 			}
 		} while (recvCount > 0);
 		std::cout << "ICI:" << data << std::endl;
+		string fichier="";
+		string hash="";
+		boolean testfichier=false;
+		for(int i=7;i<data.size();i++){
+			if(data[i]!=';'){
+				if(testfichier==false){
+					 fichier=fichier+data[i];
+				}
+				else{
+					hash=hash+data[i];
+				}
+			}
+			else{
+				if(testfichier==false){
+					testfichier=true;
+				}
+				else{
+				std::cout << fichier << " "<< hash <<std::endl;
+				if(config->getFichiers().size()!=0){
+					//Recherche si fichier de même nom
+					std::cout <<"Recherche "<< fichier << " "<< hash <<std::endl;
+					//Telechargement fichier apres test hash Fonction de recherche
 
+
+				}
+				
+				
+		
+		
+				fichier="";
+				hash="";
+				}
+			}
+		}
 	}
 	catch(CConnectionException){
 		std::cout << "ECHEC:"<<ip << std::endl;

@@ -13,8 +13,10 @@ void LancementServeurClient() {
 	
 	for(;;){
 	list<string> serveur=config->getServeurs();
-	std::cout << "SERVEUR CLIENT" << std::endl;
-	for (std::list<string>::iterator it = serveur.begin(); it != serveur.end(); it++){
+	//std::cout << "SERVEUR CLIENT" << std::endl;
+	std::list<string>::iterator itdebut = serveur.begin();
+	std::list<string>::iterator itfin = serveur.end();
+	for (std::list<string>::iterator it = itdebut; it != itfin; it++){
 		string iptemp=*it;
 		TabFichierThread(&iptemp);
 	}
