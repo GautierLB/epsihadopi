@@ -27,7 +27,7 @@ ConfigurationInterne::~ConfigurationInterne()
     log.ecrire(s);
 }
 
-// Retourne l'adresse du signleton
+// Retourne l'adresse du singleton
 ConfigurationInterne& ConfigurationInterne::getInstanceRef()
 {
 	return m_instance;
@@ -46,7 +46,7 @@ list<string> ConfigurationInterne::getServeurs()
 	return ListeServeur;
 }
 
-// Ajoute un serveur à la liste des serveurs : protégé par une section critique pour conservr l'intégrité des données
+// Ajoute un serveur à la liste des serveurs : protégé par une section critique pour conserver l'intégrité des données
 void ConfigurationInterne::addServeur(string toadd)
 {
 	sem_wait(&mutex);

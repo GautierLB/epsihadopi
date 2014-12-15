@@ -12,20 +12,20 @@ using namespace std;
 class Configuration
 {
 	public:
-		~Configuration();
-		void setNbConnectionServeur(int nb);
-		void setTimeOutScan(int time);
-		void setNbEnvoieSimultane(int nb);
-		void setNbReceptionSimultane(int nb);
-		int getNbConnectionServeur();
-		int getTimeOutScan();
-		int getNbEnvoieSimultane();
-		int getNbReceptionSimultane();
-		static Configuration* getInstance();
-		static Configuration& getInstanceRef();
+		~Configuration(); //Destructeur
+		void setNbConnectionServeur(int nb); //Définir le nombre de connection serveur
+		void setTimeOutScan(int time); //Définir le temps de recherche de client maximum
+		void setNbEnvoieSimultane(int nb); //Définir le nombre d'envois simultanés
+		void setNbReceptionSimultane(int nb); //Définir le nombre de réceptions simultanées
+		int getNbConnectionServeur(); //Obtenir le nombre de connexions serveurs
+		int getTimeOutScan(); //Obtenir le temps de recherche de client maximum
+		int getNbEnvoieSimultane(); //Obtenir le nombre d'envois simultanés
+		int getNbReceptionSimultane(); //Obtenir le nombre de réceptions simultanées
+		static Configuration* getInstance(); // Retourne l'adresse du singleton
+		static Configuration& getInstanceRef(); // Retourne l'adresse du singleton
 
 	private:
-		Configuration();
+		Configuration(); //Constructeur
 		static Configuration m_instance;
 		unsigned short nbConnectionServeur;  // nombre de client maximum
 		unsigned short timeOutScan;			// temps de recherche de client maximum 

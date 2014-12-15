@@ -7,7 +7,6 @@ Année : 2014
 
 Fichier::Fichier(string p_NomFichier, string p_hash, string p_pathfile,list<Block> p_vb)
 {
-	
 	NomFichier = p_NomFichier;
 	EmpreinteNumerique = p_hash;
 	pathfile = p_pathfile;
@@ -16,7 +15,6 @@ Fichier::Fichier(string p_NomFichier, string p_hash, string p_pathfile,list<Bloc
 
 Fichier::~Fichier()
 {
-
 }
 
 std::string Fichier::getNomFichier()
@@ -46,7 +44,6 @@ list<Block>Fichier::getListeBlock()
 
 void Fichier::addBlock(Block p_block)
 {
-	
 	listeBlock.push_back(p_block);
 	
 }
