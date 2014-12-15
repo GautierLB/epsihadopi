@@ -1,11 +1,14 @@
+/*
+Authors : CURTET Quentin, MORBOIS Antoine, LE BISSONNAIS Gautier, POUGET François.
+Organisation : I4Initial EPSI Lyon
+Année : 2014
+*/
 #include "stdafx.h"
 #include "Directorythread.h"
 #include "DetectionMainThread.h"
 #include "ServeurClient.h"
 #include "Serveur.h"
 #include "ConfigurationInterne.h"
-
-
 
 void *MainThreadFunc( void *p_arg ) {
 	int c;

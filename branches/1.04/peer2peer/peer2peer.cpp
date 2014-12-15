@@ -1,6 +1,10 @@
+/*
+Authors : CURTET Quentin, MORBOIS Antoine, LE BISSONNAIS Gautier, POUGET François.
+Organisation : I4Initial EPSI Lyon
+Année : 2014
+*/
 #include "stdafx.h"
 #include <iostream>
-
 #include "DemoException.h"
 #include "DemoSha224.h"
 #include "DemoSocket.h"
@@ -11,7 +15,6 @@
 #include "Configuration.h"
 #include "ConfigurationInterne.h"
 #include "Directorythread.h"
-
 #include "CProtocolFrame.h"
 #include "CProtocolFrameNotifyNewFileRequest.h"
 

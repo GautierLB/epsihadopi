@@ -1,3 +1,8 @@
+/*
+Authors : CURTET Quentin, MORBOIS Antoine, LE BISSONNAIS Gautier, POUGET François.
+Organisation : I4Initial EPSI Lyon
+Année : 2014
+*/
 #include <stdio.h>
 #include <sys/types.h>
 #include "ConfigurationInterne.h"
@@ -23,17 +28,13 @@ void *directoryBrowseFunc(void *p_arg)
 	struct dirent *lecture;
 	DIR *rep;
 	const char *path = ".\\Synchro";
-	//const char *path = "C:\\Users\\quent_000\\Desktop\\test";
-	//const char *path = "C:\\Users\\Fran\\Desktop\\python";
-	//const char *path = "C:\\Users\\NEWBIE\\Desktop\\test";
-	//const char *path ="C:\\Users\\Gautier\\Desktop\\Nouveau dossier";
 	
 	LOG log; 
 	rep = opendir(path);
 	unsigned int i=0;
 	unsigned char buffer[] = "AZERTYUIOPLLKJHGFDSQX";
 
-	while ((lecture = readdir(rep))) 
+	while (lecture = readdir(rep))
 	{
 
 		std::vector<std::string> cnt;

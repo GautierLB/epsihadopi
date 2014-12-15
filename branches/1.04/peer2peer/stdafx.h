@@ -7,8 +7,11 @@
 
 #include <stdio.h>
 #include <tchar.h>
-
-
+/*
+Authors : CURTET Quentin, MORBOIS Antoine, LE BISSONNAIS Gautier, POUGET François.
+Organisation : I4Initial EPSI Lyon
+Année : 2014
+*/
 
 // TODO: reference additional headers your program requires here
 #include <semaphore.h>
