@@ -22,8 +22,8 @@ void *directoryBrowseFunc(void *p_arg)
 	ConfigurationInterne* config= ConfigurationInterne::getInstance();
 	struct dirent *lecture;
 	DIR *rep;
-	//const char *path = ".\\";
-	const char *path = "C:\\Users\\quent_000\\Desktop\\test";
+	const char *path = ".\\Synchro";
+	//const char *path = "C:\\Users\\quent_000\\Desktop\\test";
 	//const char *path = "C:\\Users\\Fran\\Desktop\\python";
 	//const char *path = "C:\\Users\\NEWBIE\\Desktop\\test";
 	//const char *path ="C:\\Users\\Gautier\\Desktop\\Nouveau dossier";
