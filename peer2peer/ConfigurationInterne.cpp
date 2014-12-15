@@ -70,7 +70,7 @@ Fichier ConfigurationInterne::getFichierById(int idFichier)
 }
 
 string ConfigurationInterne::getNomFichierId(int idFichier)
-{
+{ 
 	return ListeFichier[idFichier].getNomFichier();
 }
 

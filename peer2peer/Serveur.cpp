@@ -42,8 +42,9 @@ void Serveur() {
 	s.server( 6699, 5 );
 	for (;;) {
 		std::string data, request;
+
 		int recvCount = 0;
-		char buffer[ 1024 ];
+		char buffer[ 2048 ];
 
 
 		std::cout << "Waiting for connections..." << std::endl;
@@ -109,15 +110,26 @@ void Serveur() {
 		//Renvoie tableau Fichier
 		else if(request[2]=='6'){
 			
-			char tt[22];
-		string chaine="117-"+config->getFichiers().size();
-		if(config->getFichiers().size()!=0){
-			string nomtemp=config->getNomFichierId(0);
 			
-		chaine+="Coucouc"+nomtemp;
-		}
+			int size=config->getFichiers().size();
+		string chaine="117-"+to_string(size);
 		
-
+	
+			
+			const std::vector<Fichier> myCopy = config->getFichiers();
+			std::vector<Fichier>::const_iterator i = myCopy.begin();
+			while(i != myCopy.end())
+			{
+				Fichier fichiertemp=*i;
+				chaine=chaine+fichiertemp.getNomFichier()+";";
+				chaine=chaine+fichiertemp.getEmpreinteNumerique()+";";
+			++i;
+			}
+			
+		
+		
+		int temp=chaine.size()+1;
+		char tt[1000];
 		for( int i=0;i<chaine.size();i++){
 			tt[i]=chaine[i];
 
