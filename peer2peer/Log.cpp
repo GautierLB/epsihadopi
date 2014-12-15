@@ -27,7 +27,7 @@ int CountLines(std::ifstream& File)
 }
 
 //ecriture dans le fichier de log simple
-string LOG::ecrire(const string &s)
+void LOG::ecrire(const string &s)
 {
 	sem_init(&mutex, 0, 10);
 	sem_wait(&mutex);
@@ -53,13 +53,11 @@ string LOG::ecrire(const string &s)
 	std::ifstream File("log.txt"); 
     File.clear(); 
     File.seekg(0, std::ios::beg); 
-	
-	return "";
 	sem_post(&mutex);
 }
 
 //ecriture dans le fichier de log complexe
-string LOG::ecrire_complexe(const string &s_complexe)
+void LOG::ecrire_complexe(const string &s_complexe)
 {
 	sem_init(&mutex_complexe, 0, 10);
 	sem_wait(&mutex_complexe);
@@ -85,8 +83,6 @@ string LOG::ecrire_complexe(const string &s_complexe)
 	std::ifstream File("log_complexe.txt"); 
     File.clear(); 
     File.seekg(0, std::ios::beg); 
-
-	return "";
 	sem_post(&mutex_complexe);
 }
 
