@@ -84,7 +84,9 @@ void directoryThread()
 	pthread_t t1;
 
 	void *result = nullptr;
-
+	LOG log; 
+	string s="DirectoryThread :: création du thread de detection des fichiers";
+    log.ecrire(s);
 	if (pthread_create( &t1, 0,directoryBrowseFunc,(void *) 1) != 0) 
 	{
 		
@@ -94,8 +96,9 @@ void directoryThread()
 	{
 		
 	}
-
-//	pthread_join( t1, &result );
+	 s="DirectoryThread :: fin du thread de detection des fichiers";
+    log.ecrire(s);
+	pthread_join( t1, &result );
 	return;
 }
 
