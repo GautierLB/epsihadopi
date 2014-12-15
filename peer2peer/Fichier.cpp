@@ -5,7 +5,7 @@ Année : 2014
 */
 #include "Fichier.h"
 
-Fichier::Fichier(string p_NomFichier, string p_hash, string p_pathfile,vector<Block> p_vb)
+Fichier::Fichier(string p_NomFichier, string p_hash, string p_pathfile,list<Block> p_vb)
 {
 	
 	NomFichier = p_NomFichier;
@@ -39,7 +39,7 @@ std::string Fichier::getEmpreinteNumerique()
 	return EmpreinteNumerique;
 }
 
-vector<Block>Fichier::getListeBlock()
+list<Block>Fichier::getListeBlock()
 {
 	return listeBlock;
 }
